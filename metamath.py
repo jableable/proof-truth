@@ -20,7 +20,7 @@ class Metamath:
     def close(self,id):
         self.process_dict[id].kill(signal.CTRL_C_EVENT)
         del self.process_dict[id]
-
+# how to use
 metamath = Metamath('metamath/metamath.exe')    #path from this file to metamath.exe
 print(metamath.initialize(0))
 output1 = metamath.send(0,'read "metamath/demo0.mm"')   
