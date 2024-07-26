@@ -11,12 +11,15 @@ with open('./efgcpbllemb-mm.txt', 'r') as mm, open('./efgcpbllemb-mm-pa.txt', 'r
         mm_counter = 0
         mmpa_counter = 0
         for line in mm:
-            mm_line_num = re.search("^[0-9]+[\s]",line)
+            mm_line_num = re.search("(^((|\s|\s\s)[0-9]+))(=?(\s+.+?)=)",line)
             if mm_line_num is not None:
+                print(mm_line_num)
                 mm_counter += 1
+                final_mm_line_num = mm_line_num
         for line in mmpa:
-            mmpa_line_num = re.search("^[0-9]+[\s]",line)
+            mmpa_line_num = re.search("^((|\s|\s\s)[0-9]+)(=?(\s+.+?=))",line)
             if mmpa_line_num is not None:
                 mmpa_counter += 1
-        print(f"The final numbered step from MM is {mm_line_num.group()}and the total number of steps in MM is {mm_counter}")
-        print(f"The final numbered step from MM is {mmpa_line_num.group()}and the total number of steps in MM is {mmpa_counter}")
+                final_mmpa_line_num = mmpa_line_num
+        print(f"The final numbered step from MM is {final_mm_line_num.group(1)} and the total number of steps in MM is {mm_counter}")
+        print(f"The final numbered step from MM is {final_mmpa_line_num.group(1)} and the total number of steps in MM is {mmpa_counter}")
