@@ -1,0 +1,2294 @@
+ 44     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o ) )
+   45     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+   46     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o |-> <. y , (
+                                                                  1o \ z ) >. )
+   47     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. ( 0 ... ( # `
+  v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w ) "> >. ) ) )
+   48   eqsstrid.1=efgval2        $p |- .~ = |^| { r | ( r Er W /\ A. f e. W
+                                                   ran ( T ` f ) C_ [ f ] r ) }
+  199             relopabi.1=efgcpbllem.1   $e |- L = { <. i , j >. | ( { i , j
+                       } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  200           a1i.1=relopabi            $p |- Rel L
+  201         iserd.1=a1i               $p |- ( ( A e. W /\ B e. W ) -> Rel L )
+  322                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  323                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  324                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+  325                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+  326                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+  327                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  328                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  329               3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\ g
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+  330             adantl.1=simp2bi          $p |- ( f L g -> g e. W )
+  331           syl3anbrc.1=adantl        $p |- ( ( ( A e. W /\ B e. W ) /\ f L
+                                                                g ) -> g e. W )
+  406                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  407                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  408                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+  409                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+  410                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+  411                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  412                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  413               3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\ g
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+  414             adantl.1=simp1bi          $p |- ( f L g -> f e. W )
+  415           syl3anbrc.2=adantl        $p |- ( ( ( A e. W /\ B e. W ) /\ f L
+                                                                g ) -> f e. W )
+  468                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  469                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  470               a1i.1=efger               $p |- .~ Er W
+  471             ersym.1=a1i               $p |- ( ( ( A e. W /\ B e. W ) /\ f
+                                                             L g ) -> .~ Er W )
+  560                   efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X.
+                                                                         2o ) )
+  561                   efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  562                   efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+  563                   efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e.
+( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+  564                   efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran
+                                                                    ( T ` x ) )
+  565                   efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  566                   efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( {
+                 i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  567                 3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\ g
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+  568               adantl.1=simp3bi          $p |- ( f L g -> ( ( A ++ f ) ++
+                                                   B ) .~ ( ( A ++ g ) ++ B ) )
+  569             ersym.2=adantl            $p |- ( ( ( A e. W /\ B e. W ) /\ f
+                          L g ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) )
+  570           syl3anbrc.3=ersym         $p |- ( ( ( A e. W /\ B e. W ) /\ f L
+                            g ) -> ( ( A ++ g ) ++ B ) .~ ( ( A ++ f ) ++ B ) )
+  596             efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o ) )
+  597             efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  598             efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o |-> <.
+                                                            y , ( 1o \ z ) >. )
+  599             efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. ( 0
+ ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w ) ">
+                                                                       >. ) ) )
+  600             efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran ( T `
+                                                                          x ) )
+  601             efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word W \
+ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e. ran (
+                    T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  602             efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i , j
+                       } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  603           syl3anbrc.4=efgcpbllema   $p |- ( g L f <-> ( g e. W /\ f e. W
+                              /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+  604         iserd.2=syl3anbrc         $p |- ( ( ( A e. W /\ B e. W ) /\ f L g
+                                                                   ) -> g L f )
+  738                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  739                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  740                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+  741                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+  742                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+  743                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  744                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  745               3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\ g
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+  746             ad2ant.1=simp1bi          $p |- ( f L g -> f e. W )
+  747           syl3anbrc.1=ad2antrl      $p |- ( ( ( A e. W /\ B e. W ) /\ ( f
+                                                   L g /\ g L h ) ) -> f e. W )
+  828                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  829                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  830                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+  831                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+  832                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+  833                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+  834                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+  835               3simp1bi.1=efgcpbllema    $p |- ( g L h <-> ( g e. W /\ h
+                         e. W /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+  836             ad2ant.1=simp2bi          $p |- ( g L h -> h e. W )
+  837           syl3anbrc.2=ad2antll      $p |- ( ( ( A e. W /\ B e. W ) /\ ( f
+                                                   L g /\ g L h ) ) -> h e. W )
+  912                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+  913                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+  914               a1i.1=efger               $p |- .~ Er W
+  915             ersymb.1=a1i              $p |- ( ( ( A e. W /\ B e. W ) /\ (
+                                                f L g /\ g L h ) ) -> .~ Er W )
+ 1010                   efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X.
+                                                                         2o ) )
+ 1011                   efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 1012                   efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+ 1013                   efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e.
+( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+ 1014                   efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran
+                                                                    ( T ` x ) )
+ 1015                   efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+ 1016                   efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( {
+                 i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+ 1017                 3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\ g
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+ 1018               ad2ant.1=simp3bi          $p |- ( f L g -> ( ( A ++ f ) ++
+                                                   B ) .~ ( ( A ++ g ) ++ B ) )
+ 1019             ertrd.5=ad2antrl          $p |- ( ( ( A e. W /\ B e. W ) /\ (
+             f L g /\ g L h ) ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) )
+ 1114                   efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X.
+                                                                         2o ) )
+ 1115                   efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 1116                   efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+ 1117                   efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e.
+( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+ 1118                   efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran
+                                                                    ( T ` x ) )
+ 1119                   efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+ 1120                   efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( {
+                 i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+ 1121                 3simp1bi.1=efgcpbllema    $p |- ( g L h <-> ( g e. W /\ h
+                         e. W /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+ 1122               ad2ant.1=simp3bi          $p |- ( g L h -> ( ( A ++ g ) ++
+                                                   B ) .~ ( ( A ++ h ) ++ B ) )
+ 1123             ertrd.6=ad2antll          $p |- ( ( ( A e. W /\ B e. W ) /\ (
+             f L g /\ g L h ) ) -> ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) )
+ 1124           syl3anbrc.3=ertrd         $p |- ( ( ( A e. W /\ B e. W ) /\ ( f
+               L g /\ g L h ) ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ h ) ++ B ) )
+ 1150             efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o ) )
+ 1151             efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 1152             efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o |-> <.
+                                                            y , ( 1o \ z ) >. )
+ 1153             efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. ( 0
+ ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w ) ">
+                                                                       >. ) ) )
+ 1154             efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran ( T `
+                                                                          x ) )
+ 1155             efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word W \
+ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e. ran (
+                    T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+ 1156             efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i , j
+                       } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+ 1157           syl3anbrc.4=efgcpbllema   $p |- ( f L h <-> ( f e. W /\ h e. W
+                              /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+ 1158         iserd.3=syl3anbrc         $p |- ( ( ( A e. W /\ B e. W ) /\ ( f L
+                                                      g /\ g L h ) ) -> f L h )
+ 1297                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+ 1298                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 1299                   a1i.1=efger               $p |- .~ Er W
+ 1300                 ersymb.1=a1i              $p |- ( ( ( A e. W /\ B e. W )
+                                                       /\ f e. W ) -> .~ Er W )
+ 1431                           eqsstr.1=efgval.w         $e |- W = ( _I ` Word
+                                                                  ( I X. 2o ) )
+ 1436                           eqsstr.2=fviss            $p |- ( _I ` Word ( I
+                                                  X. 2o ) ) C_ Word ( I X. 2o )
+ 1437                         sseli.1=eqsstri           $p |- W C_ Word ( I X.
+                                                                           2o )
+ 1448                         sseldi.2=simpll           $p |- ( ( ( A e. W /\ B
+                                                 e. W ) /\ f e. W ) -> A e. W )
+ 1449                       syl2anc.1=sseldi          $p |- ( ( ( A e. W /\ B
+                                  e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+ 1480                           eqsstr.1=efgval.w         $e |- W = ( _I ` Word
+                                                                  ( I X. 2o ) )
+ 1485                           eqsstr.2=fviss            $p |- ( _I ` Word ( I
+                                                  X. 2o ) ) C_ Word ( I X. 2o )
+ 1486                         sseli.1=eqsstri           $p |- W C_ Word ( I X.
+                                                                           2o )
+ 1498                         sseldi.2=simpr            $p |- ( ( ( A e. W /\ B
+                                                 e. W ) /\ f e. W ) -> f e. W )
+ 1499                       syl2anc.2=sseldi          $p |- ( ( ( A e. W /\ B
+                                  e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 1506                       syl2anc.3=ccatcl          $p |- ( ( A e. Word ( I
+         X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 1507                     syl2anc.1=syl2anc         $p |- ( ( ( A e. W /\ B e.
+                            W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 1537                         eqsstr.1=efgval.w         $e |- W = ( _I ` Word (
+                                                                    I X. 2o ) )
+ 1542                         eqsstr.2=fviss            $p |- ( _I ` Word ( I
+                                                  X. 2o ) ) C_ Word ( I X. 2o )
+ 1543                       sseli.1=eqsstri           $p |- W C_ Word ( I X. 2o
+                                                                              )
+ 1554                       sseldi.2=simplr           $p |- ( ( ( A e. W /\ B
+                                                 e. W ) /\ f e. W ) -> B e. W )
+ 1555                     syl2anc.2=sseldi          $p |- ( ( ( A e. W /\ B e.
+                                     W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 1565                     syl2anc.3=ccatcl          $p |- ( ( ( A ++ f ) e.
+ Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( A ++ f ) ++ B ) e. Word ( I
+                                                                      X. 2o ) )
+ 1566                   eleqtrrd.1=syl2anc        $p |- ( ( ( A e. W /\ B e. W
+                     ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. Word ( I X. 2o ) )
+ 1598                         efgval.w=efgval.w         $e |- W = ( _I ` Word (
+                                                                    I X. 2o ) )
+ 1599                       simprd.1=efgrcl           $p |- ( A e. W -> ( I e.
+                                                 _V /\ W = Word ( I X. 2o ) ) )
+ 1600                     ad2ant.1=simprd           $p |- ( A e. W -> W = Word
+                                                                  ( I X. 2o ) )
+ 1601                   eleqtrrd.2=ad2antrr       $p |- ( ( ( A e. W /\ B e. W
+                                        ) /\ f e. W ) -> W = Word ( I X. 2o ) )
+ 1602                 erref.2=eleqtrrd          $p |- ( ( ( A e. W /\ B e. W )
+                                      /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. W )
+ 1603               ex.1=erref                $p |- ( ( ( A e. W /\ B e. W ) /\
+                       f e. W ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) )
+ 1604             pm4.71rd.1=ex             $p |- ( ( A e. W /\ B e. W ) -> ( f
+                         e. W -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+ 1605           syl6bbr.1=pm4.71d         $p |- ( ( A e. W /\ B e. W ) -> ( f
+          e. W <-> ( f e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) ) )
+ 1715               efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o )
+                                                                              )
+ 1716               efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 1717               efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o |->
+                                                         <. y , ( 1o \ z ) >. )
+ 1718               efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. ( 0
+ ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w ) ">
+                                                                       >. ) ) )
+ 1719               efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran ( T
+                                                                        ` x ) )
+ 1720               efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word W
+ \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e. ran
+                  ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+ 1721               efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i ,
+                     j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+ 1722             3bitri.1=efgcpbllema      $p |- ( f L f <-> ( f e. W /\ f e.
+                            W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+ 1749             3bitri.2=df-3an           $a |- ( ( f e. W /\ f e. W /\ ( ( A
+++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) <-> ( ( f e. W /\ f e. W ) /\ ( ( A ++ f
+                                            ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+ 1785               anbi.1=anidm              $p |- ( ( f e. W /\ f e. W ) <->
+                                                                       f e. W )
+ 1786             3bitri.3=anbi1i           $p |- ( ( ( f e. W /\ f e. W ) /\ (
+ ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) <-> ( f e. W /\ ( ( A ++ f ) ++ B )
+                                                     .~ ( ( A ++ f ) ++ B ) ) )
+ 1787           syl6bbr.2=3bitri          $p |- ( f L f <-> ( f e. W /\ ( ( A
+                                       ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+ 1788         iserd.4=syl6bbr           $p |- ( ( A e. W /\ B e. W ) -> ( f e.
+                                                                W <-> f L f ) )
+ 1789       mpbir2and.1=iserd         $p |- ( ( A e. W /\ B e. W ) -> L Er W )
+ 2061                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+ 2062                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+ 2063                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+ 2064                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+ 2065                   simprd.1=efgtf            $p |- ( f e. W -> ( ( T ` f )
+ = ( a e. ( 0 ... ( # ` f ) ) , b e. ( I X. 2o ) |-> ( f splice <. a , a , <" b
+( M ` b ) "> >. ) ) /\ ( T ` f ) : ( ( 0 ... ( # ` f ) ) X. ( I X. 2o ) ) --> W
+                                                                            ) )
+ 2066                 adantl.1=simprd           $p |- ( f e. W -> ( T ` f ) : (
+                                   ( 0 ... ( # ` f ) ) X. ( I X. 2o ) ) --> W )
+ 2067               3syl.1=adantl             $p |- ( ( ( A e. W /\ B e. W ) /\
+         f e. W ) -> ( T ` f ) : ( ( 0 ... ( # ` f ) ) X. ( I X. 2o ) ) --> W )
+ 2084               3syl.2=ffn                $p |- ( ( T ` f ) : ( ( 0 ... ( #
+ ` f ) ) X. ( I X. 2o ) ) --> W -> ( T ` f ) Fn ( ( 0 ... ( # ` f ) ) X. ( I X.
+                                                                       2o ) ) )
+ 2103               3syl.3=ovelrn             $p |- ( ( T ` f ) Fn ( ( 0 ... (
+ # ` f ) ) X. ( I X. 2o ) ) -> ( a e. ran ( T ` f ) <-> E. c e. ( 0 ... ( # ` f
+                              ) ) E. u e. ( I X. 2o ) a = ( c ( T ` f ) u ) ) )
+ 2104             sylbid.1=3syl             $p |- ( ( ( A e. W /\ B e. W ) /\ f
+  e. W ) -> ( a e. ran ( T ` f ) <-> E. c e. ( 0 ... ( # ` f ) ) E. u e. ( I X.
+                                                 2o ) a = ( c ( T ` f ) u ) ) )
+ 2321                   syl3anbrc.1=simplr        $p |- ( ( ( ( A e. W /\ B e.
+W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> f e. W
+                                                                              )
+ 2485                           efgval.w=efgval.w         $e |- W = ( _I ` Word
+                                                                  ( I X. 2o ) )
+ 2486                           efgval.r=efgval.r         $e |- .~ = ( ~FG ` I
+                                                                              )
+ 2487                           efgval2.m=efgval2.m       $e |- M = ( y e. I ,
+                                             z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 2488                           efgval2.t=efgval2.t       $e |- T = ( v e. W
+ |-> ( n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <"
+                                                        w ( M ` w ) "> >. ) ) )
+ 2489                         simprd.1=efgtf            $p |- ( f e. W -> ( ( T
+` f ) = ( a e. ( 0 ... ( # ` f ) ) , b e. ( I X. 2o ) |-> ( f splice <. a , a ,
+ <" b ( M ` b ) "> >. ) ) /\ ( T ` f ) : ( ( 0 ... ( # ` f ) ) X. ( I X. 2o ) )
+                                                                      --> W ) )
+ 2490                       ad2ant.1=simprd           $p |- ( f e. W -> ( T ` f
+                             ) : ( ( 0 ... ( # ` f ) ) X. ( I X. 2o ) ) --> W )
+ 2491                     fovrnd.1=ad2antlr         $p |- ( ( ( ( A e. W /\ B
+e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( T
+                         ` f ) : ( ( 0 ... ( # ` f ) ) X. ( I X. 2o ) ) --> W )
+ 2520                     fovrnd.2=simprl           $p |- ( ( ( ( A e. W /\ B
+  e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> c
+                                                       e. ( 0 ... ( # ` f ) ) )
+ 2549                     fovrnd.3=simprr           $p |- ( ( ( ( A e. W /\ B
+  e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> u
+                                                               e. ( I X. 2o ) )
+ 2550                   syl3anbrc.2=fovrnd        $p |- ( ( ( ( A e. W /\ B e.
+ W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( c (
+                                                             T ` f ) u ) e. W )
+ 2812                                 eqsstr.1=efgval.w         $e |- W = ( _I
+                                                           ` Word ( I X. 2o ) )
+ 2817                                 eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 2818                               sseli.1=eqsstri           $p |- W C_ Word (
+                                                                      I X. 2o )
+ 2829                               sseldi.2=simpll           $p |- ( ( ( A e.
+                                          W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 2830                             syl2anc.1=sseldi          $p |- ( ( ( A e. W
+                             /\ B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+ 2861                                 eqsstr.1=efgval.w         $e |- W = ( _I
+                                                           ` Word ( I X. 2o ) )
+ 2866                                 eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 2867                               sseli.1=eqsstri           $p |- W C_ Word (
+                                                                      I X. 2o )
+ 2879                               sseldi.2=simpr            $p |- ( ( ( A e.
+                                          W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 2880                             syl2anc.2=sseldi          $p |- ( ( ( A e. W
+                             /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 2887                             syl2anc.3=ccatcl          $p |- ( ( A e. Word
+     ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 2888                           syl2anc.1=syl2anc         $p |- ( ( ( A e. W /\
+                       B e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 2918                               eqsstr.1=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+ 2923                               eqsstr.2=fviss            $p |- ( _I ` Word
+                                              ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 2924                             sseli.1=eqsstri           $p |- W C_ Word ( I
+                                                                        X. 2o )
+ 2935                             sseldi.2=simplr           $p |- ( ( ( A e. W
+                                            /\ B e. W ) /\ f e. W ) -> B e. W )
+ 2936                           syl2anc.2=sseldi          $p |- ( ( ( A e. W /\
+                                B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 2946                           syl2anc.3=ccatcl          $p |- ( ( ( A ++ f )
+e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( A ++ f ) ++ B ) e. Word (
+                                                                    I X. 2o ) )
+ 2947                         eleqtrrd.1=syl2anc        $p |- ( ( ( A e. W /\ B
+                e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. Word ( I X. 2o ) )
+ 2979                               efgval.w=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+ 2980                             simprd.1=efgrcl           $p |- ( A e. W -> (
+                                            I e. _V /\ W = Word ( I X. 2o ) ) )
+ 2981                           ad2ant.1=simprd           $p |- ( A e. W -> W =
+                                                             Word ( I X. 2o ) )
+ 2982                         eleqtrrd.2=ad2antrr       $p |- ( ( ( A e. W /\ B
+                                   e. W ) /\ f e. W ) -> W = Word ( I X. 2o ) )
+ 2983                       adantr.1=eleqtrrd         $p |- ( ( ( A e. W /\ B
+                               e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. W )
+ 2984                     syl2anc.1=adantr          $p |- ( ( ( ( A e. W /\ B
+e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( (
+                                                         A ++ f ) ++ B ) e. W )
+ 3525                                   eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 3530                                   eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 3531                                 sseli.1=eqsstri           $p |- W C_ Word
+                                                                    ( I X. 2o )
+ 3574                                   adantr.1=simpll           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 3575                                 sseldi.2=adantr           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                                ) ) -> A e. W )
+ 3576                               syl2anc.1=sseldi          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+ 3691                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+ 3696                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 3697                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+ 3709                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 3710                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 3711                                 syl.1=adantr              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> f e. Word ( I X. 2o ) )
+ 3719                                 syl.2=pfxcl               $p |- ( f e.
+                       Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 3720                               syl2anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                    ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 3731                               syl2anc.3=ccatcl          $p |- ( ( A e.
+Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) ) -> ( A ++ ( f prefix c
+                                                      ) ) e. Word ( I X. 2o ) )
+ 3732                             syl2anc.1=syl2anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                               -> ( A ++ ( f prefix c ) ) e. Word ( I X. 2o ) )
+ 3800                               s2cld.1=simprr            $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                      ) ) -> u e. ( I X. 2o ) )
+ 3850                                     efgmval.m=efgval2.m       $e |- M = (
+                                    y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 3851                                   ffvrni.1=efgmf            $p |- M : ( I
+                                                        X. 2o ) --> ( I X. 2o )
+ 3852                                 ad2ant.1=ffvelrni         $p |- ( u e. (
+                                        I X. 2o ) -> ( M ` u ) e. ( I X. 2o ) )
+ 3853                               s2cld.2=ad2antll          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                              ) ) -> ( M ` u ) e. ( I X. 2o ) )
+ 3854                             syl2anc.2=s2cld           $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                     -> <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+ 3874                             syl2anc.3=ccatcl          $p |- ( ( ( A ++ (
+  f prefix c ) ) e. Word ( I X. 2o ) /\ <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+      -> ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o ) )
+ 3875                           syl3anc.1=syl2anc         $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+      -> ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o ) )
+ 3995                                   eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 4000                                   eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 4001                                 sseli.1=eqsstri           $p |- W C_ Word
+                                                                    ( I X. 2o )
+ 4013                                 sseldi.2=simpr            $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 4014                               adantr.1=sseldi           $p |- ( ( ( A e.
+                           W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 4015                             syl.1=adantr              $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                     -> f e. Word ( I X. 2o ) )
+ 4027                             syl.2=swrdcl              $p |- ( f e. Word (
+            I X. 2o ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+ 4028                           syl3anc.2=syl             $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                      -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+ 4093                                 eqsstr.1=efgval.w         $e |- W = ( _I
+                                                           ` Word ( I X. 2o ) )
+ 4098                                 eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 4099                               sseli.1=eqsstri           $p |- W C_ Word (
+                                                                      I X. 2o )
+ 4110                               sseldi.2=simplr           $p |- ( ( ( A e.
+                                          W /\ B e. W ) /\ f e. W ) -> B e. W )
+ 4111                             adantr.1=sseldi           $p |- ( ( ( A e. W
+                             /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 4112                           syl3anc.3=adantr          $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                     -> B e. Word ( I X. 2o ) )
+ 4146                           syl3anc.4=ccatass         $p |- ( ( ( ( A ++ (
+ f prefix c ) ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o ) /\ ( f substr <. c ,
+( # ` f ) >. ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( ( ( A ++ (
+ f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( f substr <. c , ( # ` f ) >. ) ) ++
+B ) = ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( ( f substr <. c ,
+                                                      ( # ` f ) >. ) ++ B ) ) )
+ 4147                         3eqtr4d.1=syl3anc         $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> (
+( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( f substr <. c , ( # ` f
+  ) >. ) ) ++ B ) = ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( ( f
+                                        substr <. c , ( # ` f ) >. ) ++ B ) ) )
+ 4540                                   eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 4545                                   eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 4546                                 sseli.1=eqsstri           $p |- W C_ Word
+                                                                    ( I X. 2o )
+ 4589                                   adantr.1=simpll           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 4590                                 sseldi.2=adantr           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                                ) ) -> A e. W )
+ 4591                               syl3anc.1=sseldi          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+ 4779                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 4784                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 4785                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 4797                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 4798                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 4799                                   syl.1=adantr              $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+ 4807                                   syl.2=pfxcl               $p |- ( f e.
+                       Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 4808                                 syl2anc.1=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                    ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 4876                                   s2cld.1=simprr            $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                    ) ) ) -> u e. ( I X. 2o ) )
+ 4926                                         efgmval.m=efgval2.m       $e |- M
+                                = ( y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 4927                                       ffvrni.1=efgmf            $p |- M :
+                                                    ( I X. 2o ) --> ( I X. 2o )
+ 4928                                     ad2ant.1=ffvelrni         $p |- ( u
+                                   e. ( I X. 2o ) -> ( M ` u ) e. ( I X. 2o ) )
+ 4929                                   s2cld.2=ad2antll          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> ( M ` u ) e. ( I X. 2o ) )
+ 4930                                 syl2anc.2=s2cld           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                 ) ) -> <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+ 4947                                 syl2anc.3=ccatcl          $p |- ( ( ( f
+ prefix c ) e. Word ( I X. 2o ) /\ <" u ( M ` u ) "> e. Word ( I X. 2o ) ) -> (
+                    ( f prefix c ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o ) )
+ 4948                               syl3anc.2=syl2anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+           ) ) -> ( ( f prefix c ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o ) )
+ 5068                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+ 5073                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 5074                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+ 5086                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 5087                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 5088                                 syl.1=adantr              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> f e. Word ( I X. 2o ) )
+ 5100                                 syl.2=swrdcl              $p |- ( f e.
+     Word ( I X. 2o ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+ 5101                               syl3anc.3=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                  ) ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+ 5132                               syl3anc.4=ccatass         $p |- ( ( A e.
+Word ( I X. 2o ) /\ ( ( f prefix c ) ++ <" u ( M ` u ) "> ) e. Word ( I X. 2o )
+    /\ ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) ) -> ( ( A ++ ( ( f
+prefix c ) ++ <" u ( M ` u ) "> ) ) ++ ( f substr <. c , ( # ` f ) >. ) ) = ( A
+ ++ ( ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ++ ( f substr <. c , ( # ` f ) >.
+                                                                        ) ) ) )
+ 5133                             3eqtr4d.1=syl3anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+ -> ( ( A ++ ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ) ++ ( f substr <. c , ( #
+  ` f ) >. ) ) = ( A ++ ( ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ++ ( f substr
+                                                    <. c , ( # ` f ) >. ) ) ) )
+ 5355                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 5360                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 5361                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+ 5404                                     adantr.1=simpll           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 5405                                   sseldi.2=adantr           $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                              ) ) ) -> A e. W )
+ 5406                                 syl3anc.1=sseldi          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+ 5521                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 5526                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 5527                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 5539                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 5540                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 5541                                   syl.1=adantr              $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+ 5549                                   syl.2=pfxcl               $p |- ( f e.
+                       Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 5550                                 syl3anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                    ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 5618                                   s2cld.1=simprr            $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                    ) ) ) -> u e. ( I X. 2o ) )
+ 5668                                         efgmval.m=efgval2.m       $e |- M
+                                = ( y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 5669                                       ffvrni.1=efgmf            $p |- M :
+                                                    ( I X. 2o ) --> ( I X. 2o )
+ 5670                                     ad2ant.1=ffvelrni         $p |- ( u
+                                   e. ( I X. 2o ) -> ( M ` u ) e. ( I X. 2o ) )
+ 5671                                   s2cld.2=ad2antll          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> ( M ` u ) e. ( I X. 2o ) )
+ 5672                                 syl3anc.3=s2cld           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                 ) ) -> <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+ 5690                                 syl3anc.4=ccatass         $p |- ( ( A e.
+ Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) /\ <" u ( M ` u ) "> e.
+Word ( I X. 2o ) ) -> ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) = ( A ++
+                                    ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ) )
+ 5691                               oveq1d.1=syl3anc          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) = ( A ++ ( ( f prefix c
+                                                   ) ++ <" u ( M ` u ) "> ) ) )
+ 5692                             3eqtr4d.2=oveq1d          $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+ -> ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( f substr <. c , ( #
+` f ) >. ) ) = ( ( A ++ ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ) ++ ( f substr
+                                                      <. c , ( # ` f ) >. ) ) )
+ 5949                                   syl3anc.1=simplr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                              ) ) ) -> f e. W )
+ 5978                                   syl3anc.2=simprl          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> c e. ( 0 ... ( # ` f ) ) )
+ 6007                                   syl3anc.3=simprr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                    ) ) ) -> u e. ( I X. 2o ) )
+ 6024                                     efgval.w=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 6025                                     efgval.r=efgval.r         $e |- .~ =
+                                                                    ( ~FG ` I )
+ 6026                                     efgval2.m=efgval2.m       $e |- M = (
+                                    y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 6027                                     efgval2.t=efgval2.t       $e |- T = (
+ v e. W |-> ( n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n ,
+                                                 n , <" w ( M ` w ) "> >. ) ) )
+ 6028                                   syl3anc.4=efgtval         $p |- ( ( f
+e. W /\ c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) -> ( c ( T ` f ) u ) = (
+                                   f splice <. c , c , <" u ( M ` u ) "> >. ) )
+ 6029                                 eqtrd.1=syl3anc           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+      ) ) -> ( c ( T ` f ) u ) = ( f splice <. c , c , <" u ( M ` u ) "> >. ) )
+ 6169                                   syl3anc.1=simplr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                              ) ) ) -> f e. W )
+ 6198                                   syl3anc.2=simprl          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> c e. ( 0 ... ( # ` f ) ) )
+ 6227                                   syl3anc.3=simprl          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> c e. ( 0 ... ( # ` f ) ) )
+ 6295                                     s2cld.1=simprr            $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                 2o ) ) ) -> u e. ( I X. 2o ) )
+ 6345                                           efgmval.m=efgval2.m       $e |-
+                              M = ( y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 6346                                         ffvrni.1=efgmf            $p |- M
+                                                  : ( I X. 2o ) --> ( I X. 2o )
+ 6347                                       ad2ant.1=ffvelrni         $p |- ( u
+                                   e. ( I X. 2o ) -> ( M ` u ) e. ( I X. 2o ) )
+ 6348                                     s2cld.2=ad2antll          $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                         2o ) ) ) -> ( M ` u ) e. ( I X. 2o ) )
+ 6349                                   syl3Xanc.4=s2cld          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                               ) ) ) -> <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+ 6382                                   syl13anc.5=splval         $p |- ( ( f
+ e. W /\ ( c e. ( 0 ... ( # ` f ) ) /\ c e. ( 0 ... ( # ` f ) ) /\ <" u ( M ` u
+ ) "> e. Word ( I X. 2o ) ) ) -> ( f splice <. c , c , <" u ( M ` u ) "> >. ) =
+( ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ++ ( f substr <. c , ( # ` f ) >. ) )
+                                                                              )
+ 6383                                 eqtrd.2=syl13anc          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+ ) ) -> ( f splice <. c , c , <" u ( M ` u ) "> >. ) = ( ( ( f prefix c ) ++ <"
+                       u ( M ` u ) "> ) ++ ( f substr <. c , ( # ` f ) >. ) ) )
+ 6384                               oveq1d.1=eqtrd            $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+    ) ) -> ( c ( T ` f ) u ) = ( ( ( f prefix c ) ++ <" u ( M ` u ) "> ) ++ ( f
+                                               substr <. c , ( # ` f ) >. ) ) )
+ 6385                             3eqtr4d.3=oveq2d          $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+ -> ( A ++ ( c ( T ` f ) u ) ) = ( A ++ ( ( ( f prefix c ) ++ <" u ( M ` u ) ">
+                                    ) ++ ( f substr <. c , ( # ` f ) >. ) ) ) )
+ 6386                           oveq1d.1=3eqtr4rd         $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+  -> ( A ++ ( c ( T ` f ) u ) ) = ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u )
+                                   "> ) ++ ( f substr <. c , ( # ` f ) >. ) ) )
+ 6387                         3eqtr4d.2=oveq1d          $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> (
+( A ++ ( c ( T ` f ) u ) ) ++ B ) = ( ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M `
+                        u ) "> ) ++ ( f substr <. c , ( # ` f ) >. ) ) ++ B ) )
+ 6793                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 6798                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 6799                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 6810                                       sseldi.2=simpll           $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 6811                                     syl2anc.1=sseldi          $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+ 6842                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 6847                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 6848                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 6860                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 6861                                     syl2anc.2=sseldi          $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 6868                                     syl2anc.3=ccatcl          $p |- ( ( A
+ e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o
+                                                                            ) )
+ 6869                                   syl2anc.1=syl2anc         $p |- ( ( ( A
+               e. W /\ B e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 6899                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+ 6904                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 6905                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+ 6916                                     sseldi.2=simplr           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+ 6917                                   syl2anc.2=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 6927                                   syl2anc.3=ccatcl          $p |- ( ( ( A
+++ f ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( A ++ f ) ++ B ) e.
+                                                             Word ( I X. 2o ) )
+ 6928                                 eleqtrrd.1=syl2anc        $p |- ( ( ( A
+      e. W /\ B e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. Word ( I X. 2o ) )
+ 6960                                       efgval.w=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+ 6961                                     simprd.1=efgrcl           $p |- ( A
+                                  e. W -> ( I e. _V /\ W = Word ( I X. 2o ) ) )
+ 6962                                   ad2ant.1=simprd           $p |- ( A e.
+                                                    W -> W = Word ( I X. 2o ) )
+ 6963                                 eleqtrrd.2=ad2antrr       $p |- ( ( ( A
+                         e. W /\ B e. W ) /\ f e. W ) -> W = Word ( I X. 2o ) )
+ 6964                               adantr.1=eleqtrrd         $p |- ( ( ( A e.
+                        W /\ B e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. W )
+ 6965                             syl3anc.1=adantr          $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                  -> ( ( A ++ f ) ++ B ) e. W )
+ 7225                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 7230                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 7231                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 7274                                         adantr.1=simpll           $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 7275                                       sseldi.2=adantr           $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                           2o ) ) ) -> A e. W )
+ 7276                                     syl.1=sseldi              $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> A e. Word ( I X. 2o ) )
+ 7281                                     syl.2=lencl               $p |- ( A
+                                      e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+ 7282                                   eleqtrdi.1=syl            $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                    ) ) ) -> ( # ` A ) e. NN0 )
+ 7283                                   eleqtrdi.2=nn0uz          $p |- NN0 = (
+                                                                     ZZ>= ` 0 )
+ 7284                                 syl2anc.1=eleqtrdi        $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                             ) ) -> ( # ` A ) e. ( ZZ>= ` 0 ) )
+ 7323                                   ad2ant.1=elfznn0          $p |- ( c e.
+                                              ( 0 ... ( # ` f ) ) -> c e. NN0 )
+ 7324                                 syl2anc.2=ad2antrl        $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                              ) ) -> c e. NN0 )
+ 7331                                 syl2anc.3=uzaddcl         $p |- ( ( ( # `
+       A ) e. ( ZZ>= ` 0 ) /\ c e. NN0 ) -> ( ( # ` A ) + c ) e. ( ZZ>= ` 0 ) )
+ 7332                               sylanbrc.1=syl2anc        $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                     ) ) -> ( ( # ` A ) + c ) e. ( ZZ>= ` 0 ) )
+ 7566                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+ 7571                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 7572                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 7583                                         sseldi.2=simpll           $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 7584                                       syl2anc.1=sseldi          $p |- ( (
+                    ( A e. W /\ B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+ 7615                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+ 7620                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 7621                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 7633                                         sseldi.2=simpr            $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 7634                                       syl2anc.2=sseldi          $p |- ( (
+                    ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 7641                                       syl2anc.3=ccatcl          $p |- ( (
+  A e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X.
+                                                                         2o ) )
+ 7642                                     adantr.1=syl2anc          $p |- ( ( (
+             A e. W /\ B e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 7643                                   syl2anc.1=adantr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                      ) ) ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+ 7708                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+ 7713                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 7714                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 7725                                       sseldi.2=simplr           $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+ 7726                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 7727                                   syl2anc.2=adantr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> B e. Word ( I X. 2o ) )
+ 7740                                   syl2anc.3=ccatlen         $p |- ( ( ( A
+ ++ f ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( # ` ( ( A ++ f ) ++
+                                   B ) ) = ( ( # ` ( A ++ f ) ) + ( # ` B ) ) )
+ 7741                                 eqeltrd.1=syl2anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+      ) ) -> ( # ` ( ( A ++ f ) ++ B ) ) = ( ( # ` ( A ++ f ) ) + ( # ` B ) ) )
+ 7978                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+ 7983                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 7984                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 8027                                           adantr.1=simpll           $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 8028                                         sseldi.2=adantr           $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                                        X. 2o ) ) ) -> A e. W )
+ 8029                                       syl2anc.1=sseldi          $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> A e. Word ( I X. 2o ) )
+ 8096                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+ 8101                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 8102                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+ 8114                                           sseldi.2=simpr            $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 8115                                         adantr.1=sseldi           $p |- (
+                  ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 8116                                       syl2anc.2=adantr          $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> f e. Word ( I X. 2o ) )
+ 8126                                       syl2anc.3=ccatlen         $p |- ( (
+ A e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( # ` ( A ++ f ) ) = ( ( #
+                                                          ` A ) + ( # ` f ) ) )
+ 8127                                     eqeltrd.1=syl2anc         $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                   2o ) ) ) -> ( # ` ( A ++ f ) ) = ( ( # ` A ) + ( # ` f ) ) )
+ 8301                                           ad2ant.1=elfzuz3          $p |-
+                      ( c e. ( 0 ... ( # ` f ) ) -> ( # ` f ) e. ( ZZ>= ` c ) )
+ 8302                                         syl2anc.1=ad2antrl        $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                     X. 2o ) ) ) -> ( # ` f ) e. ( ZZ>= ` c ) )
+ 8424                                                 eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+ 8429                                                 eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 8430                                               sseli.1=eqsstri          
+                                                    $p |- W C_ Word ( I X. 2o )
+ 8473                                                 adantr.1=simpll          
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 8474                                               sseldi.2=adantr          
+$p |- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u
+                                                 e. ( I X. 2o ) ) ) -> A e. W )
+ 8475                                             syl.1=sseldi              $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                     ( I X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+ 8480                                             syl.2=lencl               $p
+                               |- ( A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+ 8481                                           nn0zd.1=syl               $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                            I X. 2o ) ) ) -> ( # ` A ) e. NN0 )
+ 8482                                         syl2anc.2=nn0zd           $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                               X. 2o ) ) ) -> ( # ` A ) e. ZZ )
+ 8492                                         syl2anc.3=eluzadd         $p |- (
+  ( ( # ` f ) e. ( ZZ>= ` c ) /\ ( # ` A ) e. ZZ ) -> ( ( # ` f ) + ( # ` A ) )
+                                              e. ( ZZ>= ` ( c + ( # ` A ) ) ) )
+ 8493                                       3eltr3d.1=syl2anc         $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+        2o ) ) ) -> ( ( # ` f ) + ( # ` A ) ) e. ( ZZ>= ` ( c + ( # ` A ) ) ) )
+ 8674                                                   eqsstr.1=efgval.w      
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+ 8679                                                   eqsstr.2=fviss         
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 8680                                                 sseli.1=eqsstri          
+                                                    $p |- W C_ Word ( I X. 2o )
+ 8692                                                 sseldi.2=simpr           
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 8693                                               adantr.1=sseldi          
+          $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 8694                                             syl.1=adantr              $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                     ( I X. 2o ) ) ) -> f e. Word ( I X. 2o ) )
+ 8700                                             syl.2=lencl               $p
+                               |- ( f e. Word ( I X. 2o ) -> ( # ` f ) e. NN0 )
+ 8701                                           nn0red.1=syl              $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                            I X. 2o ) ) ) -> ( # ` f ) e. NN0 )
+ 8702                                         muld.1=nn0cnd             $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                               X. 2o ) ) ) -> ( # ` f ) e. CC )
+ 8824                                                 eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+ 8829                                                 eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 8830                                               sseli.1=eqsstri          
+                                                    $p |- W C_ Word ( I X. 2o )
+ 8873                                                 adantr.1=simpll          
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 8874                                               sseldi.2=adantr          
+$p |- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u
+                                                 e. ( I X. 2o ) ) ) -> A e. W )
+ 8875                                             syl.1=sseldi              $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                     ( I X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+ 8880                                             syl.2=lencl               $p
+                               |- ( A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+ 8881                                           nn0red.1=syl              $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                            I X. 2o ) ) ) -> ( # ` A ) e. NN0 )
+ 8882                                         addcomd.2=nn0cnd          $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                               X. 2o ) ) ) -> ( # ` A ) e. CC )
+ 8883                                       3eltr3d.2=addcomd         $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+            2o ) ) ) -> ( ( # ` f ) + ( # ` A ) ) = ( ( # ` A ) + ( # ` f ) ) )
+ 9034                                               ad2ant.1=elfznn0         
+                                 $p |- ( c e. ( 0 ... ( # ` f ) ) -> c e. NN0 )
+ 9035                                             nn0red.1=ad2antrl         $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                                  ( I X. 2o ) ) ) -> c e. NN0 )
+ 9036                                           muld.1=nn0cnd             $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                                     I X. 2o ) ) ) -> c e. CC )
+ 9158                                                   eqsstr.1=efgval.w      
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+ 9163                                                   eqsstr.2=fviss         
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 9164                                                 sseli.1=eqsstri          
+                                                    $p |- W C_ Word ( I X. 2o )
+ 9207                                                   adantr.1=simpll        
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 9208                                                 sseldi.2=adantr          
+$p |- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u
+                                                 e. ( I X. 2o ) ) ) -> A e. W )
+ 9209                                               syl.1=sseldi             
+$p |- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u
+                                  e. ( I X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+ 9214                                               syl.2=lencl              
+                            $p |- ( A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+ 9215                                             nn0red.1=syl              $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                          ( I X. 2o ) ) ) -> ( # ` A ) e. NN0 )
+ 9216                                           addcomd.2=nn0cnd          $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                             I X. 2o ) ) ) -> ( # ` A ) e. CC )
+ 9217                                         fveq2d.1=addcomd          $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                         X. 2o ) ) ) -> ( c + ( # ` A ) ) = ( ( # ` A ) + c ) )
+ 9218                                       3eltr3d.3=fveq2d          $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+      2o ) ) ) -> ( ZZ>= ` ( c + ( # ` A ) ) ) = ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9219                                     eqeltrd.2=3eltr3d         $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+        2o ) ) ) -> ( ( # ` A ) + ( # ` f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9220                                   syl2anc.1=eqeltrd         $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                  ) ) ) -> ( # ` ( A ++ f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9326                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+ 9331                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 9332                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+ 9343                                         sseldi.2=simplr           $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+ 9344                                       adantr.1=sseldi           $p |- ( (
+                    ( A e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+ 9345                                     syl.1=adantr              $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> B e. Word ( I X. 2o ) )
+ 9350                                     syl.2=lencl               $p |- ( B
+                                      e. Word ( I X. 2o ) -> ( # ` B ) e. NN0 )
+ 9351                                   syl2anc.2=syl             $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                    ) ) ) -> ( # ` B ) e. NN0 )
+ 9369                                   syl2anc.3=uzaddcl         $p |- ( ( ( #
+` ( A ++ f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) /\ ( # ` B ) e. NN0 ) -> ( ( # `
+                   ( A ++ f ) ) + ( # ` B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9370                                 eqeltrd.2=syl2anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+    ) ) -> ( ( # ` ( A ++ f ) ) + ( # ` B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9371                               sylanbrc.2=eqeltrd        $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+           ) ) -> ( # ` ( ( A ++ f ) ++ B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+ 9390                               sylanbrc.3=elfzuzb        $p |- ( ( ( # ` A
+  ) + c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) <-> ( ( ( # ` A ) + c ) e. (
+  ZZ>= ` 0 ) /\ ( # ` ( ( A ++ f ) ++ B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) ) )
+ 9391                             syl3anc.2=sylanbrc        $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                -> ( ( # ` A ) + c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) )
+ 9420                             syl3anc.3=simprr          $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                          -> u e. ( I X. 2o ) )
+ 9448                               efgval.w=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+ 9449                               efgval.r=efgval.r         $e |- .~ = ( ~FG
+                                                                          ` I )
+ 9450                               efgval2.m=efgval2.m       $e |- M = ( y e.
+                                         I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+ 9451                               efgval2.t=efgval2.t       $e |- T = ( v e.
+  W |-> ( n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n ,
+                                                     <" w ( M ` w ) "> >. ) ) )
+ 9452                             syl3anc.4=efgtval         $p |- ( ( ( ( A ++
+  f ) ++ B ) e. W /\ ( ( # ` A ) + c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) )
+ /\ u e. ( I X. 2o ) ) -> ( ( ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B ) ) u ) =
+ ( ( ( A ++ f ) ++ B ) splice <. ( ( # ` A ) + c ) , ( ( # ` A ) + c ) , <" u (
+                                                              M ` u ) "> >. ) )
+ 9453                           eqtrd.1=syl3anc           $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+ -> ( ( ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B ) ) u ) = ( ( ( A ++ f ) ++ B )
+     splice <. ( ( # ` A ) + c ) , ( ( # ` A ) + c ) , <" u ( M ` u ) "> >. ) )
+ 9648                                   eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+ 9653                                   eqsstr.2=fviss            $p |- ( _I `
+                                         Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 9654                                 sseli.1=eqsstri           $p |- W C_ Word
+                                                                    ( I X. 2o )
+ 9697                                   adantr.1=simpll           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+ 9698                                 sseldi.2=adantr           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                                ) ) -> A e. W )
+ 9699                               syl2anc.1=sseldi          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+ 9814                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+ 9819                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+ 9820                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+ 9832                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+ 9833                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+ 9834                                 syl.1=adantr              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> f e. Word ( I X. 2o ) )
+ 9842                                 syl.2=pfxcl               $p |- ( f e.
+                       Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 9843                               syl2anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                    ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+ 9854                               syl2anc.3=ccatcl          $p |- ( ( A e.
+Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) ) -> ( A ++ ( f prefix c
+                                                      ) ) e. Word ( I X. 2o ) )
+ 9855                             splval2.a=syl2anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                               -> ( A ++ ( f prefix c ) ) e. Word ( I X. 2o ) )
+ 9895                               a1i.1=wrd0                $p |- (/) e. Word
+                                                                    ( I X. 2o )
+ 9896                             splval2.b=a1i             $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                   -> (/) e. Word ( I X. 2o ) )
+10087                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+10092                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+10093                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+10105                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+10106                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+10107                                 syl.1=adantr              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> f e. Word ( I X. 2o ) )
+10119                                 syl.2=swrdcl              $p |- ( f e.
+     Word ( I X. 2o ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+10120                               syl2anc.1=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                  ) ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+10185                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+10190                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+10191                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+10202                                   sseldi.2=simplr           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+10203                                 adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+10204                               syl2anc.2=adantr          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> B e. Word ( I X. 2o ) )
+10220                               syl2anc.3=ccatcl          $p |- ( ( ( f
+ substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) ->
+                ( ( f substr <. c , ( # ` f ) >. ) ++ B ) e. Word ( I X. 2o ) )
+10221                             splval2.c=syl2anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+             -> ( ( f substr <. c , ( # ` f ) >. ) ++ B ) e. Word ( I X. 2o ) )
+10289                               s2cld.1=simprr            $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                      ) ) -> u e. ( I X. 2o ) )
+10339                                     efgmval.m=efgval2.m       $e |- M = (
+                                    y e. I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+10340                                   ffvrni.1=efgmf            $p |- M : ( I
+                                                        X. 2o ) --> ( I X. 2o )
+10341                                 ad2ant.1=ffvelrni         $p |- ( u e. (
+                                        I X. 2o ) -> ( M ` u ) e. ( I X. 2o ) )
+10342                               s2cld.2=ad2antll          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                              ) ) -> ( M ` u ) e. ( I X. 2o ) )
+10343                             splval2.r=s2cld           $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                     -> <" u ( M ` u ) "> e. Word ( I X. 2o ) )
+10700                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+10705                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+10706                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+10749                                         adantr.1=simpll           $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+10750                                       sseldi.2=adantr           $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                           2o ) ) ) -> A e. W )
+10751                                     syl2anc.1=sseldi          $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> A e. Word ( I X. 2o ) )
+10866                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+10871                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+10872                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+10884                                           sseldi.2=simpr            $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+10885                                         adantr.1=sseldi           $p |- (
+                  ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+10886                                       syl.1=adantr              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> f e. Word ( I X. 2o ) )
+10894                                       syl.2=pfxcl               $p |- ( f
+                    e. Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+10895                                     syl2anc.2=syl             $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                               2o ) ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+10906                                     syl2anc.3=ccatcl          $p |- ( ( A
+      e. Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) ) -> ( A ++ ( f
+                                             prefix c ) ) e. Word ( I X. 2o ) )
+10907                                   syl.1=syl2anc             $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                         ) ) ) -> ( A ++ ( f prefix c ) ) e. Word ( I X. 2o ) )
+10920                                   syl.2=ccatrid             $p |- ( ( A
+++ ( f prefix c ) ) e. Word ( I X. 2o ) -> ( ( A ++ ( f prefix c ) ) ++ (/) ) =
+                                                      ( A ++ ( f prefix c ) ) )
+10921                                 oveq1d.1=syl              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+          ) ) -> ( ( A ++ ( f prefix c ) ) ++ (/) ) = ( A ++ ( f prefix c ) ) )
+10922                               3eqtr2d.1=oveq1d          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( ( ( A ++ ( f prefix c ) ) ++ (/) ) ++ ( ( f substr <. c , ( # ` f ) >.
+) ++ B ) ) = ( ( A ++ ( f prefix c ) ) ++ ( ( f substr <. c , ( # ` f ) >. ) ++
+                                                                        B ) ) )
+11148                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+11153                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+11154                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+11197                                       adantr.1=simpll           $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+11198                                     sseldi.2=adantr           $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                           2o ) ) ) -> A e. W )
+11199                                   syl2anc.1=sseldi          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> A e. Word ( I X. 2o ) )
+11314                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+11319                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+11320                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+11332                                         sseldi.2=simpr            $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+11333                                       adantr.1=sseldi           $p |- ( (
+                    ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+11334                                     syl.1=adantr              $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> f e. Word ( I X. 2o ) )
+11342                                     syl.2=pfxcl               $p |- ( f
+                    e. Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+11343                                   syl2anc.2=syl             $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                  ) ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+11354                                   syl2anc.3=ccatcl          $p |- ( ( A
+      e. Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) ) -> ( A ++ ( f
+                                             prefix c ) ) e. Word ( I X. 2o ) )
+11355                                 syl3anc.1=syl2anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                           ) ) -> ( A ++ ( f prefix c ) ) e. Word ( I X. 2o ) )
+11475                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+11480                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+11481                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+11493                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+11494                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+11495                                   syl.1=adantr              $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+11507                                   syl.2=swrdcl              $p |- ( f e.
+     Word ( I X. 2o ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+11508                                 syl3anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                  ) ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+11573                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+11578                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+11579                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+11590                                     sseldi.2=simplr           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+11591                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+11592                                 syl3anc.3=adantr          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> B e. Word ( I X. 2o ) )
+11617                                 syl3anc.4=ccatass         $p |- ( ( ( A
+ ++ ( f prefix c ) ) e. Word ( I X. 2o ) /\ ( f substr <. c , ( # ` f ) >. ) e.
+Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( ( A ++ ( f prefix c ) ) ++ (
+   f substr <. c , ( # ` f ) >. ) ) ++ B ) = ( ( A ++ ( f prefix c ) ) ++ ( ( f
+                                        substr <. c , ( # ` f ) >. ) ++ B ) ) )
+11618                               3eqtr2d.2=syl3anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( ( ( A ++ ( f prefix c ) ) ++ ( f substr <. c , ( # ` f ) >. ) ) ++ B )
+   = ( ( A ++ ( f prefix c ) ) ++ ( ( f substr <. c , ( # ` f ) >. ) ++ B ) ) )
+11912                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+11917                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+11918                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+11961                                         adantr.1=simpll           $p |- (
+                                 ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+11962                                       sseldi.2=adantr           $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                           2o ) ) ) -> A e. W )
+11963                                     syl3anc.1=sseldi          $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> A e. Word ( I X. 2o ) )
+12078                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+12083                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+12084                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+12096                                           sseldi.2=simpr            $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+12097                                         adantr.1=sseldi           $p |- (
+                  ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+12098                                       syl.1=adantr              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> f e. Word ( I X. 2o ) )
+12106                                       syl.2=pfxcl               $p |- ( f
+                    e. Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+12107                                     syl3anc.2=syl             $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                               2o ) ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+12227                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+12232                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+12233                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+12245                                           sseldi.2=simpr            $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+12246                                         adantr.1=sseldi           $p |- (
+                  ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+12247                                       syl.1=adantr              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> f e. Word ( I X. 2o ) )
+12259                                       syl.2=swrdcl              $p |- ( f
+  e. Word ( I X. 2o ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+12260                                     syl3anc.3=syl             $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+             2o ) ) ) -> ( f substr <. c , ( # ` f ) >. ) e. Word ( I X. 2o ) )
+12282                                     syl3anc.4=ccatass         $p |- ( ( A
+ e. Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) /\ ( f substr <. c ,
+( # ` f ) >. ) e. Word ( I X. 2o ) ) -> ( ( A ++ ( f prefix c ) ) ++ ( f substr
+ <. c , ( # ` f ) >. ) ) = ( A ++ ( ( f prefix c ) ++ ( f substr <. c , ( # ` f
+                                                                   ) >. ) ) ) )
+12283                                   eqtrd.1=syl3anc           $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+ ) ) ) -> ( ( A ++ ( f prefix c ) ) ++ ( f substr <. c , ( # ` f ) >. ) ) = ( A
+                  ++ ( ( f prefix c ) ++ ( f substr <. c , ( # ` f ) >. ) ) ) )
+12549                                               eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+12554                                               eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+12555                                             sseli.1=eqsstri           $p
+                                                       |- W C_ Word ( I X. 2o )
+12567                                             sseldi.2=simpr            $p
+                            |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+12568                                           adantr.1=sseldi           $p |-
+                ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+12569                                         syl3anc.1=adantr          $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                         X. 2o ) ) ) -> f e. Word ( I X. 2o ) )
+12598                                         syl3anc.2=simprl          $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                      X. 2o ) ) ) -> c e. ( 0 ... ( # ` f ) ) )
+12796                                                     eqsstr.1=efgval.w    
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+12801                                                     eqsstr.2=fviss       
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+12802                                                   sseli.1=eqsstri        
+                                                    $p |- W C_ Word ( I X. 2o )
+12814                                                   sseldi.2=simpr         
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+12815                                                 adantr.1=sseldi          
+          $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+12816                                               syl.1=adantr             
+$p |- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u
+                                  e. ( I X. 2o ) ) ) -> f e. Word ( I X. 2o ) )
+12822                                               syl.2=lencl              
+                            $p |- ( f e. Word ( I X. 2o ) -> ( # ` f ) e. NN0 )
+12823                                             eleqtrdi.1=syl            $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                          ( I X. 2o ) ) ) -> ( # ` f ) e. NN0 )
+12824                                             eleqtrdi.2=nn0uz          $p
+                                                          |- NN0 = ( ZZ>= ` 0 )
+12825                                           syl.1=eleqtrdi            $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                   I X. 2o ) ) ) -> ( # ` f ) e. ( ZZ>= ` 0 ) )
+12831                                           syl.2=eluzfz2             $p |-
+              ( ( # ` f ) e. ( ZZ>= ` 0 ) -> ( # ` f ) e. ( 0 ... ( # ` f ) ) )
+12832                                         syl3anc.3=syl             $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                              X. 2o ) ) ) -> ( # ` f ) e. ( 0 ... ( # ` f ) ) )
+12844                                         syl3anc.4=ccatpfx         $p |- (
+( f e. Word ( I X. 2o ) /\ c e. ( 0 ... ( # ` f ) ) /\ ( # ` f ) e. ( 0 ... ( #
+      ` f ) ) ) -> ( ( f prefix c ) ++ ( f substr <. c , ( # ` f ) >. ) ) = ( f
+                                                           prefix ( # ` f ) ) )
+12845                                       eqtrd.1=syl3anc           $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+2o ) ) ) -> ( ( f prefix c ) ++ ( f substr <. c , ( # ` f ) >. ) ) = ( f prefix
+                                                                  ( # ` f ) ) )
+12960                                               eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+12965                                               eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+12966                                             sseli.1=eqsstri           $p
+                                                       |- W C_ Word ( I X. 2o )
+12978                                             sseldi.2=simpr            $p
+                            |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+12979                                           adantr.1=sseldi           $p |-
+                ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+12980                                         syl.1=adantr              $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                         X. 2o ) ) ) -> f e. Word ( I X. 2o ) )
+12986                                         syl.2=pfxid               $p |- (
+                          f e. Word ( I X. 2o ) -> ( f prefix ( # ` f ) ) = f )
+12987                                       eqtrd.2=syl               $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                       2o ) ) ) -> ( f prefix ( # ` f ) ) = f )
+12988                                     oveq1d.1=eqtrd            $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+       2o ) ) ) -> ( ( f prefix c ) ++ ( f substr <. c , ( # ` f ) >. ) ) = f )
+12989                                   eqtrd.2=oveq2d            $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+ ) ) ) -> ( A ++ ( ( f prefix c ) ++ ( f substr <. c , ( # ` f ) >. ) ) ) = ( A
+                                                                       ++ f ) )
+12990                                 oveq1d.1=eqtrd            $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( ( A ++ ( f prefix c ) ) ++ ( f substr <. c , ( # ` f ) >. ) ) = ( A ++
+                                                                          f ) )
+12991                               3eqtr2d.3=oveq1d          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( ( ( A ++ ( f prefix c ) ) ++ ( f substr <. c , ( # ` f ) >. ) ) ++ B )
+                                                        = ( ( A ++ f ) ++ B ) )
+12992                             splval2.s=3eqtr2rd        $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+  -> ( ( A ++ f ) ++ B ) = ( ( ( A ++ ( f prefix c ) ) ++ (/) ) ++ ( ( f substr
+                                               <. c , ( # ` f ) >. ) ++ B ) ) )
+13173                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+13178                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+13179                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+13222                                     adantr.1=simpll           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+13223                                   sseldi.2=adantr           $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                              ) ) ) -> A e. W )
+13224                                 syl2anc.1=sseldi          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+13339                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+13344                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+13345                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+13357                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+13358                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+13359                                   syl.1=adantr              $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+13367                                   syl.2=pfxcl               $p |- ( f e.
+                       Word ( I X. 2o ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+13368                                 syl2anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                    ) ) -> ( f prefix c ) e. Word ( I X. 2o ) )
+13382                                 syl2anc.3=ccatlen         $p |- ( ( A e.
+   Word ( I X. 2o ) /\ ( f prefix c ) e. Word ( I X. 2o ) ) -> ( # ` ( A ++ ( f
+                      prefix c ) ) ) = ( ( # ` A ) + ( # ` ( f prefix c ) ) ) )
+13383                               eqtr2d.1=syl2anc          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+) ) -> ( # ` ( A ++ ( f prefix c ) ) ) = ( ( # ` A ) + ( # ` ( f prefix c ) ) )
+                                                                              )
+13552                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+13557                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+13558                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+13570                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+13571                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+13572                                   syl2anc.1=adantr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+13601                                   syl2anc.2=simprl          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> c e. ( 0 ... ( # ` f ) ) )
+13609                                   syl2anc.3=pfxlen          $p |- ( ( f
+e. Word ( I X. 2o ) /\ c e. ( 0 ... ( # ` f ) ) ) -> ( # ` ( f prefix c ) ) = c
+                                                                              )
+13610                                 oveq1d.1=syl2anc          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                            ) ) -> ( # ` ( f prefix c ) ) = c )
+13611                               eqtr2d.2=oveq2d           $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+            ) ) -> ( ( # ` A ) + ( # ` ( f prefix c ) ) ) = ( ( # ` A ) + c ) )
+13612                             splval2.f=eqtr2d          $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                       -> ( ( # ` A ) + c ) = ( # ` ( A ++ ( f prefix c ) ) ) )
+13684                                 oveq1i.1=hash0            $p |- ( # ` (/)
+                                                                          ) = 0
+13685                               syl5req.1=oveq2i          $p |- ( ( ( # ` A
+                            ) + c ) + ( # ` (/) ) ) = ( ( ( # ` A ) + c ) + 0 )
+13883                                           eqsstr.1=efgval.w         $e |-
+                                                  W = ( _I ` Word ( I X. 2o ) )
+13888                                           eqsstr.2=fviss            $p |-
+                                  ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+13889                                         sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+13932                                           adantr.1=simpll           $p |-
+                               ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+13933                                         sseldi.2=adantr           $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                                        X. 2o ) ) ) -> A e. W )
+13934                                       syl.1=sseldi              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                            2o ) ) ) -> A e. Word ( I X. 2o ) )
+13939                                       syl.2=lencl               $p |- ( A
+                                      e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+13940                                     nn0red.1=syl              $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                 2o ) ) ) -> ( # ` A ) e. NN0 )
+13979                                       ad2ant.1=elfznn0          $p |- ( c
+                                           e. ( 0 ... ( # ` f ) ) -> c e. NN0 )
+13980                                     nn0addcld.2=ad2antrl      $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                         2o ) ) ) -> c e. NN0 )
+13981                                   nn0red.1=nn0addcld        $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                            ) ) ) -> ( ( # ` A ) + c ) e. NN0 )
+13982                                 muld.1=nn0cnd             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                               ) ) -> ( ( # ` A ) + c ) e. CC )
+13983                               syl5req.2=addid1d         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                         ) ) -> ( ( ( # ` A ) + c ) + 0 ) = ( ( # ` A ) + c ) )
+13984                             splval2.t=syl5req         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                   -> ( ( # ` A ) + c ) = ( ( ( # ` A ) + c ) + ( # ` (/) ) ) )
+13985                           eqtrd.2=splval2           $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+-> ( ( ( A ++ f ) ++ B ) splice <. ( ( # ` A ) + c ) , ( ( # ` A ) + c ) , <" u
+( M ` u ) "> >. ) = ( ( ( A ++ ( f prefix c ) ) ++ <" u ( M ` u ) "> ) ++ ( ( f
+                                        substr <. c , ( # ` f ) >. ) ++ B ) ) )
+13986                         3eqtr4d.3=eqtrd           $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> (
+( ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B ) ) u ) = ( ( ( A ++ ( f prefix c ) )
+        ++ <" u ( M ` u ) "> ) ++ ( ( f substr <. c , ( # ` f ) >. ) ++ B ) ) )
+13987                       eqeltrd.1=3eqtr4d         $p |- ( ( ( ( A e. W /\ B
+e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( (
+A ++ ( c ( T ` f ) u ) ) ++ B ) = ( ( ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B )
+                                                                        ) u ) )
+14371                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+14376                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+14377                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+14388                                     sseldi.2=simpll           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+14389                                   syl2anc.1=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+14420                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+14425                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+14426                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+14438                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+14439                                   syl2anc.2=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+14446                                   syl2anc.3=ccatcl          $p |- ( ( A
+ e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o
+                                                                            ) )
+14447                                 syl2anc.1=syl2anc         $p |- ( ( ( A
+               e. W /\ B e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+14477                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+14482                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+14483                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+14494                                   sseldi.2=simplr           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+14495                                 syl2anc.2=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+14505                                 syl2anc.3=ccatcl          $p |- ( ( ( A
+++ f ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( A ++ f ) ++ B ) e.
+                                                             Word ( I X. 2o ) )
+14506                               eleqtrrd.1=syl2anc        $p |- ( ( ( A e.
+         W /\ B e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. Word ( I X. 2o ) )
+14538                                     efgval.w=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+14539                                   simprd.1=efgrcl           $p |- ( A e.
+                                     W -> ( I e. _V /\ W = Word ( I X. 2o ) ) )
+14540                                 ad2ant.1=simprd           $p |- ( A e. W
+                                                      -> W = Word ( I X. 2o ) )
+14541                               eleqtrrd.2=ad2antrr       $p |- ( ( ( A e.
+                            W /\ B e. W ) /\ f e. W ) -> W = Word ( I X. 2o ) )
+14542                             adantr.1=eleqtrrd         $p |- ( ( ( A e. W
+                          /\ B e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. W )
+14543                           3syl.1=adantr             $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                  -> ( ( A ++ f ) ++ B ) e. W )
+14655                               efgval.w=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+14656                               efgval.r=efgval.r         $e |- .~ = ( ~FG
+                                                                          ` I )
+14657                               efgval2.m=efgval2.m       $e |- M = ( y e.
+                                         I , z e. 2o |-> <. y , ( 1o \ z ) >. )
+14658                               efgval2.t=efgval2.t       $e |- T = ( v e.
+  W |-> ( n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n ,
+                                                     <" w ( M ` w ) "> >. ) ) )
+14659                             simprd.1=efgtf            $p |- ( ( ( A ++ f
+ ) ++ B ) e. W -> ( ( T ` ( ( A ++ f ) ++ B ) ) = ( a e. ( 0 ... ( # ` ( ( A ++
+  f ) ++ B ) ) ) , b e. ( I X. 2o ) |-> ( ( ( A ++ f ) ++ B ) splice <. a , a ,
+<" b ( M ` b ) "> >. ) ) /\ ( T ` ( ( A ++ f ) ++ B ) ) : ( ( 0 ... ( # ` ( ( A
+                                   ++ f ) ++ B ) ) ) X. ( I X. 2o ) ) --> W ) )
+14660                           3syl.2=simprd             $p |- ( ( ( A ++ f )
+ ++ B ) e. W -> ( T ` ( ( A ++ f ) ++ B ) ) : ( ( 0 ... ( # ` ( ( A ++ f ) ++ B
+                                                 ) ) ) X. ( I X. 2o ) ) --> W )
+14689                           3syl.3=ffn                $p |- ( ( T ` ( ( A
+ ++ f ) ++ B ) ) : ( ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) X. ( I X. 2o ) ) -->
+ W -> ( T ` ( ( A ++ f ) ++ B ) ) Fn ( ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) X.
+                                                                ( I X. 2o ) ) )
+14690                         syl3anc.1=3syl            $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> (
+ T ` ( ( A ++ f ) ++ B ) ) Fn ( ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) X. ( I X.
+                                                                       2o ) ) )
+14950                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+14955                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+14956                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+14999                                     adantr.1=simpll           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+15000                                   sseldi.2=adantr           $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                                              ) ) ) -> A e. W )
+15001                                 syl.1=sseldi              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> A e. Word ( I X. 2o ) )
+15006                                 syl.2=lencl               $p |- ( A e.
+                                         Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+15007                               eleqtrdi.1=syl            $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                      ) ) -> ( # ` A ) e. NN0 )
+15008                               eleqtrdi.2=nn0uz          $p |- NN0 = (
+                                                                     ZZ>= ` 0 )
+15009                             syl2anc.1=eleqtrdi        $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                 -> ( # ` A ) e. ( ZZ>= ` 0 ) )
+15048                               ad2ant.1=elfznn0          $p |- ( c e. ( 0
+                                                  ... ( # ` f ) ) -> c e. NN0 )
+15049                             syl2anc.2=ad2antrl        $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                                                  -> c e. NN0 )
+15056                             syl2anc.3=uzaddcl         $p |- ( ( ( # ` A )
+           e. ( ZZ>= ` 0 ) /\ c e. NN0 ) -> ( ( # ` A ) + c ) e. ( ZZ>= ` 0 ) )
+15057                           sylanbrc.1=syl2anc        $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+                                         -> ( ( # ` A ) + c ) e. ( ZZ>= ` 0 ) )
+15291                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+15296                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+15297                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+15308                                     sseldi.2=simpll           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+15309                                   syl2anc.1=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+15340                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+15345                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+15346                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+15358                                     sseldi.2=simpr            $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+15359                                   syl2anc.2=sseldi          $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+15366                                   syl2anc.3=ccatcl          $p |- ( ( A
+ e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o
+                                                                            ) )
+15367                                 adantr.1=syl2anc          $p |- ( ( ( A
+               e. W /\ B e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+15368                               syl2anc.1=adantr          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                        ) ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+15433                                     eqsstr.1=efgval.w         $e |- W = (
+                                                        _I ` Word ( I X. 2o ) )
+15438                                     eqsstr.2=fviss            $p |- ( _I
+                                       ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+15439                                   sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+15450                                   sseldi.2=simplr           $p |- ( ( ( A
+                                       e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+15451                                 adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+15452                               syl2anc.2=adantr          $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> B e. Word ( I X. 2o ) )
+15465                               syl2anc.3=ccatlen         $p |- ( ( ( A ++
+f ) e. Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( # ` ( ( A ++ f ) ++ B )
+                                       ) = ( ( # ` ( A ++ f ) ) + ( # ` B ) ) )
+15466                             eqeltrd.1=syl2anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+          -> ( # ` ( ( A ++ f ) ++ B ) ) = ( ( # ` ( A ++ f ) ) + ( # ` B ) ) )
+15703                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+15708                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+15709                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+15752                                       adantr.1=simpll           $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+15753                                     sseldi.2=adantr           $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                           2o ) ) ) -> A e. W )
+15754                                   syl2anc.1=sseldi          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> A e. Word ( I X. 2o ) )
+15821                                         eqsstr.1=efgval.w         $e |- W
+                                                    = ( _I ` Word ( I X. 2o ) )
+15826                                         eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+15827                                       sseli.1=eqsstri           $p |- W
+                                                            C_ Word ( I X. 2o )
+15839                                       sseldi.2=simpr            $p |- ( (
+                                   ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+15840                                     adantr.1=sseldi           $p |- ( ( (
+                      A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+15841                                   syl2anc.2=adantr          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+                                               ) ) ) -> f e. Word ( I X. 2o ) )
+15851                                   syl2anc.3=ccatlen         $p |- ( ( A
+ e. Word ( I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( # ` ( A ++ f ) ) = ( ( # `
+                                                            A ) + ( # ` f ) ) )
+15852                                 eqeltrd.1=syl2anc         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                        ) ) -> ( # ` ( A ++ f ) ) = ( ( # ` A ) + ( # ` f ) ) )
+16026                                       ad2ant.1=elfzuz3          $p |- ( c
+                          e. ( 0 ... ( # ` f ) ) -> ( # ` f ) e. ( ZZ>= ` c ) )
+16027                                     syl2anc.1=ad2antrl        $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                        2o ) ) ) -> ( # ` f ) e. ( ZZ>= ` c ) )
+16149                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+16154                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+16155                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+16198                                             adantr.1=simpll           $p
+                            |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+16199                                           sseldi.2=adantr           $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                                      I X. 2o ) ) ) -> A e. W )
+16200                                         syl.1=sseldi              $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                         X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+16205                                         syl.2=lencl               $p |- (
+                                    A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+16206                                       nn0zd.1=syl               $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                 2o ) ) ) -> ( # ` A ) e. NN0 )
+16207                                     syl2anc.2=nn0zd           $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                  2o ) ) ) -> ( # ` A ) e. ZZ )
+16217                                     syl2anc.3=eluzadd         $p |- ( ( (
+ # ` f ) e. ( ZZ>= ` c ) /\ ( # ` A ) e. ZZ ) -> ( ( # ` f ) + ( # ` A ) ) e. (
+                                                   ZZ>= ` ( c + ( # ` A ) ) ) )
+16218                                   3eltr3d.1=syl2anc         $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+           ) ) ) -> ( ( # ` f ) + ( # ` A ) ) e. ( ZZ>= ` ( c + ( # ` A ) ) ) )
+16399                                               eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+16404                                               eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+16405                                             sseli.1=eqsstri           $p
+                                                       |- W C_ Word ( I X. 2o )
+16417                                             sseldi.2=simpr            $p
+                            |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. W )
+16418                                           adantr.1=sseldi           $p |-
+                ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+16419                                         syl.1=adantr              $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                         X. 2o ) ) ) -> f e. Word ( I X. 2o ) )
+16425                                         syl.2=lencl               $p |- (
+                                    f e. Word ( I X. 2o ) -> ( # ` f ) e. NN0 )
+16426                                       nn0red.1=syl              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                 2o ) ) ) -> ( # ` f ) e. NN0 )
+16427                                     muld.1=nn0cnd             $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                  2o ) ) ) -> ( # ` f ) e. CC )
+16549                                             eqsstr.1=efgval.w         $e
+                                               |- W = ( _I ` Word ( I X. 2o ) )
+16554                                             eqsstr.2=fviss            $p
+                               |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+16555                                           sseli.1=eqsstri           $p |-
+                                                          W C_ Word ( I X. 2o )
+16598                                             adantr.1=simpll           $p
+                            |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+16599                                           sseldi.2=adantr           $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                                      I X. 2o ) ) ) -> A e. W )
+16600                                         syl.1=sseldi              $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                         X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+16605                                         syl.2=lencl               $p |- (
+                                    A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+16606                                       nn0red.1=syl              $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                 2o ) ) ) -> ( # ` A ) e. NN0 )
+16607                                     addcomd.2=nn0cnd          $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                  2o ) ) ) -> ( # ` A ) e. CC )
+16608                                   3eltr3d.2=addcomd         $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+               ) ) ) -> ( ( # ` f ) + ( # ` A ) ) = ( ( # ` A ) + ( # ` f ) ) )
+16759                                           ad2ant.1=elfznn0          $p |-
+                                       ( c e. ( 0 ... ( # ` f ) ) -> c e. NN0 )
+16760                                         nn0red.1=ad2antrl         $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                                      X. 2o ) ) ) -> c e. NN0 )
+16761                                       muld.1=nn0cnd             $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                          2o ) ) ) -> c e. CC )
+16883                                               eqsstr.1=efgval.w        
+                                            $e |- W = ( _I ` Word ( I X. 2o ) )
+16888                                               eqsstr.2=fviss           
+                            $p |- ( _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+16889                                             sseli.1=eqsstri           $p
+                                                       |- W C_ Word ( I X. 2o )
+16932                                               adantr.1=simpll          
+                         $p |- ( ( ( A e. W /\ B e. W ) /\ f e. W ) -> A e. W )
+16933                                             sseldi.2=adantr           $p
+|- ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e.
+                                                    ( I X. 2o ) ) ) -> A e. W )
+16934                                           syl.1=sseldi              $p |-
+ ( ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. (
+                                       I X. 2o ) ) ) -> A e. Word ( I X. 2o ) )
+16939                                           syl.2=lencl               $p |-
+                                  ( A e. Word ( I X. 2o ) -> ( # ` A ) e. NN0 )
+16940                                         nn0red.1=syl              $p |- (
+ ( ( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I
+                                              X. 2o ) ) ) -> ( # ` A ) e. NN0 )
+16941                                       addcomd.2=nn0cnd          $p |- ( (
+( ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                                                  2o ) ) ) -> ( # ` A ) e. CC )
+16942                                     fveq2d.1=addcomd          $p |- ( ( (
+  ( A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X.
+                            2o ) ) ) -> ( c + ( # ` A ) ) = ( ( # ` A ) + c ) )
+16943                                   3eltr3d.3=fveq2d          $p |- ( ( ( (
+ A e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o
+         ) ) ) -> ( ZZ>= ` ( c + ( # ` A ) ) ) = ( ZZ>= ` ( ( # ` A ) + c ) ) )
+16944                                 eqeltrd.2=3eltr3d         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+             ) ) -> ( ( # ` A ) + ( # ` f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+16945                               syl2anc.1=eqeltrd         $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                    ) ) -> ( # ` ( A ++ f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+17051                                       eqsstr.1=efgval.w         $e |- W =
+                                                      ( _I ` Word ( I X. 2o ) )
+17056                                       eqsstr.2=fviss            $p |- (
+                                    _I ` Word ( I X. 2o ) ) C_ Word ( I X. 2o )
+17057                                     sseli.1=eqsstri           $p |- W C_
+                                                               Word ( I X. 2o )
+17068                                     sseldi.2=simplr           $p |- ( ( (
+                                     A e. W /\ B e. W ) /\ f e. W ) -> B e. W )
+17069                                   adantr.1=sseldi           $p |- ( ( ( A
+                        e. W /\ B e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+17070                                 syl.1=adantr              $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                 ) ) -> B e. Word ( I X. 2o ) )
+17075                                 syl.2=lencl               $p |- ( B e.
+                                         Word ( I X. 2o ) -> ( # ` B ) e. NN0 )
+17076                               syl2anc.2=syl             $p |- ( ( ( ( A
+ e. W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o )
+                                                      ) ) -> ( # ` B ) e. NN0 )
+17094                               syl2anc.3=uzaddcl         $p |- ( ( ( # ` (
+A ++ f ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) /\ ( # ` B ) e. NN0 ) -> ( ( # ` ( A
+                       ++ f ) ) + ( # ` B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+17095                             eqeltrd.2=syl2anc         $p |- ( ( ( ( A e.
+W /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+        -> ( ( # ` ( A ++ f ) ) + ( # ` B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+17096                           sylanbrc.2=eqeltrd        $p |- ( ( ( ( A e. W
+  /\ B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) )
+               -> ( # ` ( ( A ++ f ) ++ B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) )
+17115                           sylanbrc.3=elfzuzb        $p |- ( ( ( # ` A ) +
+ c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) <-> ( ( ( # ` A ) + c ) e. ( ZZ>=
+       ` 0 ) /\ ( # ` ( ( A ++ f ) ++ B ) ) e. ( ZZ>= ` ( ( # ` A ) + c ) ) ) )
+17116                         syl3anc.2=sylanbrc        $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> (
+                     ( # ` A ) + c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) )
+17145                         syl3anc.3=simprr          $p |- ( ( ( ( A e. W /\
+B e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> u
+                                                               e. ( I X. 2o ) )
+17181                         syl3anc.4=fnovrn          $p |- ( ( ( T ` ( ( A
+ ++ f ) ++ B ) ) Fn ( ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) X. ( I X. 2o ) ) /\
+ ( ( # ` A ) + c ) e. ( 0 ... ( # ` ( ( A ++ f ) ++ B ) ) ) /\ u e. ( I X. 2o )
+ ) -> ( ( ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B ) ) u ) e. ran ( T ` ( ( A ++
+                                                                 f ) ++ B ) ) )
+17182                       eqeltrd.2=syl3anc         $p |- ( ( ( ( A e. W /\ B
+e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( (
+ ( # ` A ) + c ) ( T ` ( ( A ++ f ) ++ B ) ) u ) e. ran ( T ` ( ( A ++ f ) ++ B
+                                                                          ) ) )
+17183                     syl2anc.2=eqeltrd         $p |- ( ( ( ( A e. W /\ B
+e. W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( (
+           A ++ ( c ( T ` f ) u ) ) ++ B ) e. ran ( T ` ( ( A ++ f ) ++ B ) ) )
+17217                       efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17218                       efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17219                       efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17220                       efgval2.t=efgval2.t       $e |- T = ( v e. W |-> (
+ n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M
+                                                              ` w ) "> >. ) ) )
+17221                     syl2anc.3=efgi2           $p |- ( ( ( ( A ++ f ) ++ B
+ ) e. W /\ ( ( A ++ ( c ( T ` f ) u ) ) ++ B ) e. ran ( T ` ( ( A ++ f ) ++ B )
+            ) ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ ( c ( T ` f ) u ) ) ++ B ) )
+17222                   syl3anbrc.3=syl2anc       $p |- ( ( ( ( A e. W /\ B e.
+ W ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( ( A
+                         ++ f ) ++ B ) .~ ( ( A ++ ( c ( T ` f ) u ) ) ++ B ) )
+17255                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17256                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17257                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17258                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+17259                     efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+17260                     efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17261                     efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | (
+               { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17262                   syl3anbrc.4=efgcpbllema   $p |- ( f L ( c ( T ` f ) u )
+<-> ( f e. W /\ ( c ( T ` f ) u ) e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ ( c (
+                                                       T ` f ) u ) ) ++ B ) ) )
+17263                 syl5ibr.1=syl3anbrc       $p |- ( ( ( ( A e. W /\ B e. W
+ ) /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> f L ( c
+                                                                ( T ` f ) u ) )
+17308                     elec.1=vex                $p |- a e. _V
+17310                     elec.2=vex                $p |- f e. _V
+17311                   syl5bb.1=elec             $p |- ( a e. [ f ] L <-> f L
+                                                                            a )
+17326                   syl5bb.2=breq2            $p |- ( a = ( c ( T ` f ) u )
+                                       -> ( f L a <-> f L ( c ( T ` f ) u ) ) )
+17327                 syl5ibr.2=syl5bb          $p |- ( a = ( c ( T ` f ) u )
+                                -> ( a e. [ f ] L <-> f L ( c ( T ` f ) u ) ) )
+17328               rexlimdvva.1=syl5ibrcom   $p |- ( ( ( ( A e. W /\ B e. W )
+ /\ f e. W ) /\ ( c e. ( 0 ... ( # ` f ) ) /\ u e. ( I X. 2o ) ) ) -> ( a = ( c
+                                              ( T ` f ) u ) -> a e. [ f ] L ) )
+17329             sylbid.2=rexlimdvva       $p |- ( ( ( A e. W /\ B e. W ) /\ f
+e. W ) -> ( E. c e. ( 0 ... ( # ` f ) ) E. u e. ( I X. 2o ) a = ( c ( T ` f ) u
+                                                          ) -> a e. [ f ] L ) )
+17330           ssrdv.1=sylbid            $p |- ( ( ( A e. W /\ B e. W ) /\ f
+                             e. W ) -> ( a e. ran ( T ` f ) -> a e. [ f ] L ) )
+17331         ralrimiva.1=ssrdv         $p |- ( ( ( A e. W /\ B e. W ) /\ f e.
+                                              W ) -> ran ( T ` f ) C_ [ f ] L )
+17332       mpbir2and.2=ralrimiva     $p |- ( ( A e. W /\ B e. W ) -> A. f e. W
+                                                     ran ( T ` f ) C_ [ f ] L )
+17450                 relopabi.1=efgcpbllem.1   $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17451               a1i.1=relopabi            $p |- Rel L
+17452             iserd.1=a1i               $p |- ( ( A e. W /\ B e. W ) -> Rel
+                                                                            L )
+17573                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17574                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17575                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17576                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+17577                     efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+17578                     efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17579                     efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | (
+               { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17580                   3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\
+                       g e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+17581                 adantl.1=simp2bi          $p |- ( f L g -> g e. W )
+17582               syl3anbrc.1=adantl        $p |- ( ( ( A e. W /\ B e. W ) /\
+                                                            f L g ) -> g e. W )
+17657                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17658                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17659                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17660                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+17661                     efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+17662                     efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17663                     efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | (
+               { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17664                   3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\
+                       g e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+17665                 adantl.1=simp1bi          $p |- ( f L g -> f e. W )
+17666               syl3anbrc.2=adantl        $p |- ( ( ( A e. W /\ B e. W ) /\
+                                                            f L g ) -> f e. W )
+17719                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17720                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17721                   a1i.1=efger               $p |- .~ Er W
+17722                 ersym.1=a1i               $p |- ( ( ( A e. W /\ B e. W )
+                                                        /\ f L g ) -> .~ Er W )
+17811                       efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17812                       efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17813                       efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17814                       efgval2.t=efgval2.t       $e |- T = ( v e. W |-> (
+ n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M
+                                                              ` w ) "> >. ) ) )
+17815                       efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+17816                       efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17817                       efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. |
+             ( { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17818                     3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W
+                    /\ g e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+17819                   adantl.1=simp3bi          $p |- ( f L g -> ( ( A ++ f )
+                                                ++ B ) .~ ( ( A ++ g ) ++ B ) )
+17820                 ersym.2=adantl            $p |- ( ( ( A e. W /\ B e. W )
+                     /\ f L g ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) )
+17821               syl3anbrc.3=ersym         $p |- ( ( ( A e. W /\ B e. W ) /\
+                        f L g ) -> ( ( A ++ g ) ++ B ) .~ ( ( A ++ f ) ++ B ) )
+17847                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+17848                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17849                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+17850                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+17851                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+17852                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17853                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17854               syl3anbrc.4=efgcpbllema   $p |- ( g L f <-> ( g e. W /\ f
+                         e. W /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+17855             iserd.2=syl3anbrc         $p |- ( ( ( A e. W /\ B e. W ) /\ f
+                                                               L g ) -> g L f )
+17989                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+17990                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+17991                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+17992                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+17993                     efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+17994                     efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+17995                     efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | (
+               { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+17996                   3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W /\
+                       g e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+17997                 ad2ant.1=simp1bi          $p |- ( f L g -> f e. W )
+17998               syl3anbrc.1=ad2antrl      $p |- ( ( ( A e. W /\ B e. W ) /\
+                                               ( f L g /\ g L h ) ) -> f e. W )
+18079                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+18080                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18081                     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+18082                     efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n
+ e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M `
+                                                                w ) "> >. ) ) )
+18083                     efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+18084                     efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+18085                     efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | (
+               { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+18086                   3simp1bi.1=efgcpbllema    $p |- ( g L h <-> ( g e. W /\
+                       h e. W /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+18087                 ad2ant.1=simp2bi          $p |- ( g L h -> h e. W )
+18088               syl3anbrc.2=ad2antll      $p |- ( ( ( A e. W /\ B e. W ) /\
+                                               ( f L g /\ g L h ) ) -> h e. W )
+18163                     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+18164                     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18165                   a1i.1=efger               $p |- .~ Er W
+18166                 ersymb.1=a1i              $p |- ( ( ( A e. W /\ B e. W )
+                                           /\ ( f L g /\ g L h ) ) -> .~ Er W )
+18261                       efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+18262                       efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18263                       efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+18264                       efgval2.t=efgval2.t       $e |- T = ( v e. W |-> (
+ n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M
+                                                              ` w ) "> >. ) ) )
+18265                       efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+18266                       efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+18267                       efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. |
+             ( { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+18268                     3simp1bi.1=efgcpbllema    $p |- ( f L g <-> ( f e. W
+                    /\ g e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) ) )
+18269                   ad2ant.1=simp3bi          $p |- ( f L g -> ( ( A ++ f )
+                                                ++ B ) .~ ( ( A ++ g ) ++ B ) )
+18270                 ertrd.5=ad2antrl          $p |- ( ( ( A e. W /\ B e. W )
+        /\ ( f L g /\ g L h ) ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ g ) ++ B ) )
+18365                       efgval.w=efgval.w         $e |- W = ( _I ` Word ( I
+                                                                      X. 2o ) )
+18366                       efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18367                       efgval2.m=efgval2.m       $e |- M = ( y e. I , z e.
+                                                  2o |-> <. y , ( 1o \ z ) >. )
+18368                       efgval2.t=efgval2.t       $e |- T = ( v e. W |-> (
+ n e. ( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M
+                                                              ` w ) "> >. ) ) )
+18369                       efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W
+                                                                ran ( T ` x ) )
+18370                       efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+18371                       efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. |
+             ( { i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+18372                     3simp1bi.1=efgcpbllema    $p |- ( g L h <-> ( g e. W
+                    /\ h e. W /\ ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+18373                   ad2ant.1=simp3bi          $p |- ( g L h -> ( ( A ++ g )
+                                                ++ B ) .~ ( ( A ++ h ) ++ B ) )
+18374                 ertrd.6=ad2antll          $p |- ( ( ( A e. W /\ B e. W )
+        /\ ( f L g /\ g L h ) ) -> ( ( A ++ g ) ++ B ) .~ ( ( A ++ h ) ++ B ) )
+18375               syl3anbrc.3=ertrd         $p |- ( ( ( A e. W /\ B e. W ) /\
+           ( f L g /\ g L h ) ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ h ) ++ B ) )
+18401                 efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o
+                                                                            ) )
+18402                 efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18403                 efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+18404                 efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e. (
+  0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+18405                 efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran (
+                                                                      T ` x ) )
+18406                 efgred.s=efgred.s         $e |- S = ( m e. { t e. ( Word
+   W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k ) e.
+              ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+18407                 efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( { i
+                   , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+18408               syl3anbrc.4=efgcpbllema   $p |- ( f L h <-> ( f e. W /\ h
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ h ) ++ B ) ) )
+18409             iserd.3=syl3anbrc         $p |- ( ( ( A e. W /\ B e. W ) /\ (
+                                                  f L g /\ g L h ) ) -> f L h )
+18548                         efgval.w=efgval.w         $e |- W = ( _I ` Word (
+                                                                    I X. 2o ) )
+18549                         efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18550                       a1i.1=efger               $p |- .~ Er W
+18551                     ersymb.1=a1i              $p |- ( ( ( A e. W /\ B e.
+                                                   W ) /\ f e. W ) -> .~ Er W )
+18682                               eqsstr.1=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+18687                               eqsstr.2=fviss            $p |- ( _I ` Word
+                                              ( I X. 2o ) ) C_ Word ( I X. 2o )
+18688                             sseli.1=eqsstri           $p |- W C_ Word ( I
+                                                                        X. 2o )
+18699                             sseldi.2=simpll           $p |- ( ( ( A e. W
+                                            /\ B e. W ) /\ f e. W ) -> A e. W )
+18700                           syl2anc.1=sseldi          $p |- ( ( ( A e. W /\
+                                B e. W ) /\ f e. W ) -> A e. Word ( I X. 2o ) )
+18731                               eqsstr.1=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+18736                               eqsstr.2=fviss            $p |- ( _I ` Word
+                                              ( I X. 2o ) ) C_ Word ( I X. 2o )
+18737                             sseli.1=eqsstri           $p |- W C_ Word ( I
+                                                                        X. 2o )
+18749                             sseldi.2=simpr            $p |- ( ( ( A e. W
+                                            /\ B e. W ) /\ f e. W ) -> f e. W )
+18750                           syl2anc.2=sseldi          $p |- ( ( ( A e. W /\
+                                B e. W ) /\ f e. W ) -> f e. Word ( I X. 2o ) )
+18757                           syl2anc.3=ccatcl          $p |- ( ( A e. Word (
+       I X. 2o ) /\ f e. Word ( I X. 2o ) ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+18758                         syl2anc.1=syl2anc         $p |- ( ( ( A e. W /\ B
+                         e. W ) /\ f e. W ) -> ( A ++ f ) e. Word ( I X. 2o ) )
+18788                             eqsstr.1=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+18793                             eqsstr.2=fviss            $p |- ( _I ` Word (
+                                                I X. 2o ) ) C_ Word ( I X. 2o )
+18794                           sseli.1=eqsstri           $p |- W C_ Word ( I
+                                                                        X. 2o )
+18805                           sseldi.2=simplr           $p |- ( ( ( A e. W /\
+                                               B e. W ) /\ f e. W ) -> B e. W )
+18806                         syl2anc.2=sseldi          $p |- ( ( ( A e. W /\ B
+                                  e. W ) /\ f e. W ) -> B e. Word ( I X. 2o ) )
+18816                         syl2anc.3=ccatcl          $p |- ( ( ( A ++ f ) e.
+ Word ( I X. 2o ) /\ B e. Word ( I X. 2o ) ) -> ( ( A ++ f ) ++ B ) e. Word ( I
+                                                                      X. 2o ) )
+18817                       eleqtrrd.1=syl2anc        $p |- ( ( ( A e. W /\ B
+                e. W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. Word ( I X. 2o ) )
+18849                             efgval.w=efgval.w         $e |- W = ( _I `
+                                                             Word ( I X. 2o ) )
+18850                           simprd.1=efgrcl           $p |- ( A e. W -> ( I
+                                              e. _V /\ W = Word ( I X. 2o ) ) )
+18851                         ad2ant.1=simprd           $p |- ( A e. W -> W =
+                                                             Word ( I X. 2o ) )
+18852                       eleqtrrd.2=ad2antrr       $p |- ( ( ( A e. W /\ B
+                                   e. W ) /\ f e. W ) -> W = Word ( I X. 2o ) )
+18853                     erref.2=eleqtrrd          $p |- ( ( ( A e. W /\ B e.
+                                  W ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) e. W )
+18854                   ex.1=erref                $p |- ( ( ( A e. W /\ B e. W
+                  ) /\ f e. W ) -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) )
+18855                 pm4.71rd.1=ex             $p |- ( ( A e. W /\ B e. W ) ->
+                     ( f e. W -> ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+18856               syl6bbr.1=pm4.71d         $p |- ( ( A e. W /\ B e. W ) -> (
+        f e. W <-> ( f e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) ) )
+18966                   efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X.
+                                                                         2o ) )
+18967                   efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
+18968                   efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o
+                                                     |-> <. y , ( 1o \ z ) >. )
+18969                   efgval2.t=efgval2.t       $e |- T = ( v e. W |-> ( n e.
+( 0 ... ( # ` v ) ) , w e. ( I X. 2o ) |-> ( v splice <. n , n , <" w ( M ` w )
+                                                                    "> >. ) ) )
+18970                   efgred.d=efgred.d         $e |- D = ( W \ U_ x e. W ran
+                                                                    ( T ` x ) )
+18971                   efgred.s=efgred.s         $e |- S = ( m e. { t e. (
+ Word W \ { (/) } ) | ( ( t ` 0 ) e. D /\ A. k e. ( 1 ..^ ( # ` t ) ) ( t ` k )
+           e. ran ( T ` ( t ` ( k - 1 ) ) ) ) } |-> ( m ` ( ( # ` m ) - 1 ) ) )
+18972                   efgcpbllem.1=efgcpbllem.1 $e |- L = { <. i , j >. | ( {
+                 i , j } C_ W /\ ( ( A ++ i ) ++ B ) .~ ( ( A ++ j ) ++ B ) ) }
+18973                 3bitri.1=efgcpbllema      $p |- ( f L f <-> ( f e. W /\ f
+                         e. W /\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+19000                 3bitri.2=df-3an           $a |- ( ( f e. W /\ f e. W /\ (
+ ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) <-> ( ( f e. W /\ f e. W ) /\ ( ( A
+                                       ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+19036                   anbi.1=anidm              $p |- ( ( f e. W /\ f e. W )
+                                                                   <-> f e. W )
+19037                 3bitri.3=anbi1i           $p |- ( ( ( f e. W /\ f e. W )
+/\ ( ( A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) <-> ( f e. W /\ ( ( A ++ f ) ++
+                                                 B ) .~ ( ( A ++ f ) ++ B ) ) )
+19038               syl6bbr.2=3bitri          $p |- ( f L f <-> ( f e. W /\ ( (
+                                     A ++ f ) ++ B ) .~ ( ( A ++ f ) ++ B ) ) )
+19039             iserd.4=syl6bbr           $p |- ( ( A e. W /\ B e. W ) -> ( f
+                                                             e. W <-> f L f ) )
+19040           mpisyl.1=iserd            $p |- ( ( A e. W /\ B e. W ) -> L Er
+                                                                            W )
+19047             fvexi.1=efgval.w          $e |- W = ( _I ` Word ( I X. 2o ) )
+19048           mpisyl.2=fvexi            $p |- W e. _V
+19052           mpisyl.3=erex             $p |- ( L Er W -> ( W e. _V -> L e.
+                                                                         _V ) )
+19053         syl.1=mpisyl              $p |- ( ( A e. W /\ B e. W ) -> L e. _V
+                                                                              )
+19135             anbi12d.1=ereq1           $p |- ( r = L -> ( r Er W <-> L Er
+                                                                          W ) )
+19186                 sseq1d.1=eceq2            $p |- ( r = L -> [ f ] r = [ f
+                                                                          ] L )
+19187               ralbidv.1=sseq2d          $p |- ( r = L -> ( ran ( T ` f )
+                                    C_ [ f ] r <-> ran ( T ` f ) C_ [ f ] L ) )
+19188             anbi12d.2=ralbidv         $p |- ( r = L -> ( A. f e. W ran (
+                  T ` f ) C_ [ f ] r <-> A. f e. W ran ( T ` f ) C_ [ f ] L ) )
+19189           elabg.1=anbi12d           $p |- ( r = L -> ( ( r Er W /\ A. f
+ e. W ran ( T ` f ) C_ [ f ] r ) <-> ( L Er W /\ A. f e. W ran ( T ` f ) C_ [ f
+                                                                      ] L ) ) )
+19190         syl.2=elabg               $p |- ( L e. _V -> ( L e. { r | ( r Er
+W /\ A. f e. W ran ( T ` f ) C_ [ f ] r ) } <-> ( L Er W /\ A. f e. W ran ( T `
+                                                           f ) C_ [ f ] L ) ) )
+19191       mpbir2and.3=syl           $p |- ( ( A e. W /\ B e. W ) -> ( L e. {
+ r | ( r Er W /\ A. f e. W ran ( T ` f ) C_ [ f ] r ) } <-> ( L Er W /\ A. f e.
+                                               W ran ( T ` f ) C_ [ f ] L ) ) )
+19192     syl.1=mpbir2and           $p |- ( ( A e. W /\ B e. W ) -> L e. { r |
+                           ( r Er W /\ A. f e. W ran ( T ` f ) C_ [ f ] r ) } )
+19215     syl.2=intss1              $p |- ( L e. { r | ( r Er W /\ A. f e. W
+  ran ( T ` f ) C_ [ f ] r ) } -> |^| { r | ( r Er W /\ A. f e. W ran ( T ` f )
+                                                          C_ [ f ] r ) } C_ L )
+19216   eqsstrid.2=syl            $p |- ( ( A e. W /\ B e. W ) -> |^| { r | ( r
+                          Er W /\ A. f e. W ran ( T ` f ) C_ [ f ] r ) } C_ L )
+19217 efgcpbllemb=eqsstrid      $p |- ( ( A e. W /\ B e. W ) -> .~ C_ L )
