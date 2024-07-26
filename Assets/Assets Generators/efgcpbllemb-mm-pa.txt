@@ -1,4 +1,4 @@
- 44     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o ) )
+   44     efgval.w=efgval.w         $e |- W = ( _I ` Word ( I X. 2o ) )
    45     efgval.r=efgval.r         $e |- .~ = ( ~FG ` I )
    46     efgval2.m=efgval2.m       $e |- M = ( y e. I , z e. 2o |-> <. y , (
                                                                   1o \ z ) >. )
