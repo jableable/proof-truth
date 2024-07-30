@@ -2,7 +2,7 @@ import re
 from collections import defaultdict
 import pandas as pd
 from metamath import Metamath
-
+import ast
 
 
 
@@ -19,11 +19,11 @@ print(metamath.send(thrd,'set width 1000000'))
 tags = {}
 error_tag = []
 count = 0
-#tag_dict = {'efgcpbllemb':{'statement':'$p aaa $.','tag':'efgcpbllemb'}}
-#tag_dict = {'mp2':{'statement':'$p aaa $.','tag':'mp2'}}
+
 
 for tag in tag_dict:
     tag_name = tag_dict[tag]['tag']
+
     if tag_name in tags:
         print(f"SameName error {tag_name}")
     if tag_dict[tag]['statement'].startswith('$p'):
@@ -44,12 +44,15 @@ for tag in tag_dict:
         continue
     lines = output.split('\n')[:-1]
 
-
+    if pd.isna(tag_dict[tag]['hypothesis_s']):
+        tag_dict[tag]['hypothesis_s'] = "{}"
+    tag_dict[tag]['hypothesis_s'] = ast.literal_eval(tag_dict[tag]['hypothesis_s'])
 
     tags[tag_name] = {}
     tags[tag_name]['tag'] = tag_name
     tags[tag_name]['proof'] = {}
     tags[tag_name]['node'] = {}
+    tags[tag_name]['hpt'] = {}
     proof_raw = []
     for line in lines:
         line = line.strip()
@@ -62,18 +65,29 @@ for tag in tag_dict:
             tags[tag_name]['proof'][int(step)] = statement
             if node_tag not in tags[tag_name]['node']:  
                 tags[tag_name]['node'][node_tag] ={}
-            tags[tag_name]['node'][node_tag][step] = hpt
+            tags[tag_name]['node'][node_tag][int(step)] = [int(h) for h in hpt.split(',')]
         else:
             match = re.match(r'(\d+)(\s+)(\S+)(\s+)(\S+)(\s+)(\$.*)', line)
             if match:
-                step = match.group(1)
-                hpt = match.group(3)
-                node_tag = match.group(5)
-                statement = match.group(7)
-                tags[tag_name]['proof'][int(step)] = statement
-                if node_tag not in tags[tag_name]['node']:  
-                    tags[tag_name]['node'][node_tag] ={}
-                tags[tag_name]['node'][node_tag][step] = hpt
+                if match.group(5).startswith("@"):
+                    step = match.group(1)
+                    if match.group(3) in tag_dict[tag]['hypothesis_s']:
+                        print(1/0)
+                        if match.group(3) in tags[tag_name]['hpt']:
+                            tags[tag_name]['hpt'][match.group(3)].append(int(step))
+                        else:
+                            tags[tag_name]['hpt'][match.group(3)] = [int(step)]
+                    statement = match.group(7)
+                    tags[tag_name]['proof'][int(step)] = statement
+                else:
+                    step = match.group(1)
+                    hpt = match.group(3)
+                    node_tag = match.group(5)
+                    statement = match.group(7)
+                    tags[tag_name]['proof'][int(step)] = statement
+                    if node_tag not in tags[tag_name]['node']:  
+                        tags[tag_name]['node'][node_tag] ={}
+                    tags[tag_name]['node'][node_tag][int(step)] = [int(h) for h in hpt.split(',')]
             else:
                 match = re.match(r'(\d+)(\s+)(\S+)(\s+)(\$.*)', line)
                 if not match:
@@ -84,6 +98,12 @@ for tag in tag_dict:
                 if match.group(3).startswith("@"):
                     statement = match.group(3)
                 else:
+                    label = match.group(3)
+                    if label in tag_dict[tag]['hypothesis_s']:
+                        if match.group(3) in tags[tag_name]['hpt']:
+                            tags[tag_name]['hpt'][match.group(3)].append(int(step))
+                        else:
+                            tags[tag_name]['hpt'][match.group(3)] = [int(step)]
                     statement = match.group(5)
                 tags[tag_name]['proof'][int(step)] = statement
 
