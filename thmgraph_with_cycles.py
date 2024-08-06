@@ -5,10 +5,11 @@ import numpy as np
 import pickle
 
 
-df = pd.read_csv('tag_proof2.csv', index_col='tag')
-tag_dict = df.to_dict(orient='index')
+
 
 def get_label(node: dict, k: int):
+    if len(node)==0:
+        return None
     for key, v in node.items():
         if k in v.keys():
             return key       #return the label string
@@ -39,7 +40,8 @@ def preprocess_edge_index(subst_dict: dict, edge_index: np.ndarray):
 def get_node_features(proof: dict, node: dict):
 
     pattern_e = r'^\$e' #to match 1st two characters of $e statement
-    pattern_2=r'^..' 
+    #pattern_2=r'^..' 
+    pattern_2=r'\$[^\s]*'
     pattern_at='^@' #to match @ 
     pattern_pipe_dash = r'.*?\|- ' #used in removing everything preceding |- symbol
 
@@ -47,15 +49,14 @@ def get_node_features(proof: dict, node: dict):
     for i, (k, v) in enumerate(proof.items()):
         num=k
         label=None
-
         if re.match(pattern_at, v):  #write that later - what to do with @
             pass
         else:
             if node:
                 label=get_label(node, k)  #get label if the text label exists; set label to None otherwise
-                if not label:    
-                    match = re.match(pattern_2, v)
-                    label=match.group(0)    
+            if not label:  
+                match = re.match(pattern_2, v)
+                label=match.group(0)    
             statement=re.sub(pattern_pipe_dash, '', v, count=1)  #remove everything preceeding |-
             x.append([i, {'num':num, 'label':label, 'statement': statement}])
 
@@ -86,6 +87,10 @@ def get_edge_index_renumbered(node_index: list, edge_index: np.ndarray):  #renum
 
 
 if __name__ == "__main__":
+
+    df = pd.read_csv('tag_proof2.csv', index_col='tag')
+    tag_dict = df.to_dict(orient='index')
+
     graph_dict={}
 
     for n, key in enumerate(tag_dict.keys()):
