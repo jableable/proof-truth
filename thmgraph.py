@@ -110,5 +110,5 @@ if __name__ == "__main__":
                 }
     
 
-    with open('proof_graph_with_cycles2.pkl', 'wb') as file:
+    with open('proof_graph.pkl', 'wb') as file:
         pickle.dump(graph_dict, file)
