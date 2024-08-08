@@ -24,7 +24,7 @@ def get_thm_label_num(lbl):
 
 # create portion of embedding from theorem statement; returns embedding vector
 def get_thm_stmt_emb(stmt):
-    vector_size = 500   # 500 is placeholder for longest logical statement from tag_proof.csv
+    vector_size = 11547   # 11547 obtained as length of longest logical statement from find_longest_statement.py
     emb = np.zeros(vector_size, dtype=int)   # initialize embedding vector
 
     split_stmt = stmt.split()   # remove spaces from stmt and place each character into ordered list
@@ -38,13 +38,18 @@ def get_thm_stmt_emb(stmt):
             emb[num] = voc_index[char]
     return emb
 
-if __name__ == "__main__":
-    #temporary example input of stmt and lbl
-    #lbl = 'rspcev'  
-    #stmt = '( ( G e. R /\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
-  
 
-    def create_emb(lbl,stmt):
-        #prepend emb from get_thm_stmt_emb(stmt) with num from get_thm_label_num(lbl)
-        total_emb = np.insert(get_thm_stmt_emb(stmt),0,get_thm_label_num(lbl))
-        return total_emb
+# combine embeddings from get_thm_label_num and get_thm_stmt_emb
+def create_emb(lbl,stmt):
+    #prepend emb from get_thm_stmt_emb(stmt) with num from get_thm_label_num(lbl)
+    total_emb = np.insert(get_thm_stmt_emb(stmt),0,get_thm_label_num(lbl))
+    return total_emb
+
+
+if __name__ == "__main__":  
+    
+    #temporary example input of stmt and lbl
+    lbl = 'rspcev'  
+    stmt = '( ( G e. R /\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
+    print(create_emb(lbl,stmt))
+    
