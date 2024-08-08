@@ -88,7 +88,7 @@ def get_edge_index_renumbered(node_index: list, edge_index: np.ndarray):  #renum
 
 if __name__ == "__main__":
 
-    df = pd.read_csv('tag_proof2.csv', index_col='tag')
+    df = pd.read_csv('./Assets/tag_proof.csv', index_col='tag')
     tag_dict = df.to_dict(orient='index')
 
     graph_dict={}
