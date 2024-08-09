@@ -39,3 +39,4 @@ with open('./numbered_set.txt', 'r') as input, open('../labels.txt', 'w') as out
         label = re.search("\S+(?=\s\$a|\s\$p)",line)
         if label is not None:
             output.write(label.group()+"\n")
+    output.write("$e") # extra assumption label

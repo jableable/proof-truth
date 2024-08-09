@@ -1,12 +1,10 @@
 # given a logical statement like the following proof step from lcfrvalsnN 
 # (38836 in MM, 36622 in tag_proof.csv, 36284 in proof_graph.pkl):
-# 400: '$p |- ( ( G e. R /\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
+# 400: '$p |- ( ( G e. R /\\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
 # use vocab.txt to find its embedding vector
 
 # vector is of length equal to longest logical statement present in tag_proof.csv
 # statements which do not fill vector are trailed by 0s
-
-#one thing to fix: \ shows up as \\
 
 import numpy as np
 
@@ -18,8 +16,8 @@ def get_thm_label_num(lbl):
             line = line.split() # get rid of \n
             if lbl in line:
                 return num+1    #shift by 1 to match lines nums from labels.txt
-        print("didn't find it...")
-        return
+    print(f"didn't find {lbl}")
+    return
 
 
 # create portion of embedding from theorem statement; returns embedding vector
@@ -50,6 +48,6 @@ if __name__ == "__main__":
     
     #temporary example input of stmt and lbl
     lbl = 'rspcev'  
-    stmt = '( ( G e. R /\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
+    stmt = '( ( G e. R /\\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
     print(create_emb(lbl,stmt))
     

@@ -2,3 +2,5 @@ Assets/Assets Generators/graph-generator.ipynb
 Assets/Assets Generators/graph-generator.py
 proof_graph.pkl
 make-dataloader.ipynb
+Model/__pycache__/statement_embedding.cpython-311.pyc
+Model/__pycache__/statement-embedding.cpython-311.pyc

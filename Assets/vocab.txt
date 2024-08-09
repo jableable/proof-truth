@@ -9,13 +9,14 @@ AbelOp
 Trs
 FermatNo
 R'
-Proset Dirset
+Proset
+Dirset
 s'_
-"V"""
+V"
 P1
 ->.
 curry
-"p"""
+p"
 varFMnd
 mSA
 ClSubSp
@@ -26,19 +27,20 @@ CMnd
 <pQ
 w'
 iota
-"O"""
+O"
 F.
 b1_
 ~~>v
 jla
 -1-1->
-"z"""
+z"
 PtFin
 *
 curryF
 l'
 p'
-degAA minPolyAA
+degAA
+minPolyAA
 AssAlg
 join
 EqvRels
@@ -58,7 +60,8 @@ Po
 Smgrp
 <>
 bits
-Xs_ ^s
+Xs_
+^s
 TrPred
 <_s
 _d
@@ -72,7 +75,7 @@ idFunc
 PrjSp
 mVar
 quot
-"s""_"
+s"_
 End
 h1
 AxPow
@@ -94,12 +97,14 @@ ZZ
 a0_
 :
 CauFil
-UB LB
+UB
+LB
 |_
 ph'
 ''''
 \
-pr1 pr2
+pr1
+pr2
 _Qp
 leG
 null
@@ -145,11 +150,12 @@ PNrm
 ps'
 PAut
 0.
-"D"""
+D"
 CRingOps
 2ndF
 0p
-midG lInvG
+midG
+lInvG
 UFL
 .o
 CMgmALT
@@ -158,7 +164,7 @@ subMat
 ze0
 Fr
 U1
-"F"""
+F"
 d'
 o1_
 ElDisj
@@ -174,7 +180,9 @@ ordPwSer
 Smo
 ZeroO
 decompPMat
-TarskiG Itv LineG
+TarskiG
+Itv
+LineG
 S'
 FallFac
 ComplGraph
@@ -182,11 +190,22 @@ LinOp
 h0
 CC
 ^
-Img Domain Range pprod Apply Cup Cap Succ Funpart FullFun Restrict
+Img
+Domain
+Range
+pprod
+Apply
+Cup
+Cap
+Succ
+Funpart
+FullFun
+Restrict
 mVSubst
 0g
 X_
-pmSgn pmEven
+pmSgn
+pmEven
 mCN
 V1_
 freeGrp
@@ -226,7 +245,8 @@ X
 mPwSer
 CCfld
 k1
-Even Odd
+Even
+Odd
 ZRHom
 mmu
 SPaths
@@ -237,15 +257,21 @@ Homf
 AlgInd
 mFRel
 gEx
-"B"""
+B"
 HomLim
 _/_\^n
 Base
 CatCat
 ~P^*
 Clsd
-DMatALT ScMatALT
-+r -r .v PtDf RR3  line3
+DMatALT
+ScMatALT
++r
+-r
+.v
+PtDf
+RR3
+line3
 Atoms
 suc
 comf
@@ -309,7 +335,10 @@ ZZring
 0h
 _I
 P'
-Moore mrCls mrInd ACS
+Moore
+mrCls
+mrInd
+ACS
 oc
 .\/
 ~QG
@@ -318,7 +347,7 @@ TrailsOn
 LLines
 ClWalks
 Disj_
-"w"""
+w"
 oppR
 |->
 mzPoly
@@ -339,7 +368,8 @@ toUnifSp
 &
 Arg
 .<
-Monot MGalConn
+Monot
+MGalConn
 s1
 OuterFiveSeg
 y'
@@ -357,10 +387,11 @@ vA
 Tr
 Perf
 dist
-"(,]"
+(,]
 AxInf
 ~P
-UPGraph UMGraph
+UPGraph
+UMGraph
 rh0
 .N
 PSubCl
@@ -378,10 +409,10 @@ eigval
 mUV
 idlGen1p
 theta
-"X"""
+X"
 comLaw
 SemiGrp
-"ps"""
+ps"
 piN
 E*
 _trCl
@@ -393,7 +424,7 @@ F1_
 ocH
 ._|_
 AP
-"c"""
+c"
 ExId
 ConstPolyMat
 [.
@@ -449,8 +480,12 @@ On
 MaxIdl
 t
 ka
-"U"""
-_M _Old _N _L _R
+U"
+_M
+_Old
+_N
+_L
+_R
 toCPreHil
 GId
 wff
@@ -460,7 +495,7 @@ HDMap1
 BernPoly
 .
 mST
-"j"""
+j"
 K
 o'_
 evalF
@@ -485,17 +520,18 @@ ta0
 RngCat
 aleph
 SubMnd
-"N"""
+N"
 e.g
 _E
-"C"""
+C"
 <oL
 |X.
-"x"""
+x"
 .xb
 1st
 EqvRel
-_ZZ IntgOver
+_ZZ
+IntgOver
 ~~>r
 /.
 RingSpan
@@ -510,8 +546,10 @@ I0
 U0
 WAtoms
 hadd
-GoldbachEven GoldbachOddW GoldbachOdd
-"y"""
+GoldbachEven
+GoldbachOddW
+GoldbachOdd
+y"
 iomnn
 TopSet
 raG
@@ -526,7 +564,7 @@ w0
 ClWWalksNOn
 IdA
 Prt
-"K"""
+K"
 mEx
 ~=c
 RefRels
@@ -536,18 +574,21 @@ i'
 -.g
 o.func
 m
-"a"""
+a"
 z1
 mapd
 *e
-No <s bday
+No
+<s
+bday
 +o
 /r
 prod_
 MonoAP
 T'
 _O
-rmX rmY
+rmX
+rmY
 f'
 PConn
 CauFilU
@@ -575,12 +616,13 @@ U
 UFD
 RR*
 0vec
-"P"""
+P"
 Ack
 DVecH
 Ers
 8
-DMat ScMat
+DMat
+ScMat
 et1
 Abel
 sin
@@ -589,7 +631,9 @@ CCinfty
 AxExt
 1stF
 +v
-<< >> XX.
+<<
+>>
+XX.
 jth
 RingCatALTV
 cyclShiftOLD
@@ -606,9 +650,9 @@ x'
 +f
 NrmRing
 WSPathsNOn
-"W"""
+W"
 9
-"th"""
+th"
 Y1
 ;
 MgmHom
@@ -633,10 +677,11 @@ sgn
 MblFn
 uncurry_
 D'
-numer denom
+numer
+denom
 Toset
-"ph"""
-"E"""
+ph"
+E"
 |^|
 SRing
 SalGen
@@ -659,9 +704,9 @@ DivRingOps
 Lat
 ->
 jps
-"Q"""
+Q"
 +e
-"si"""
+si"
 fBas
 .||
 maVecMul
@@ -687,21 +732,28 @@ e.
 RingCat
 F
 LTrn
-"Z"""
+Z"
 oFC
 z'
 pGrp
 vH
-"k"""
+k"
 G
 i1
 _/_\
-matRRep matRepV
+matRRep
+matRepV
 F/
 polyFld
 V
 UHGraph
-Fin1a Fin2 Fin3 Fin4 Fin5 Fin6 Fin7
+Fin1a
+Fin2
+Fin3
+Fin4
+Fin5
+Fin6
+Fin7
 ^o
 l
 /L
@@ -714,7 +766,7 @@ perpG
 ketbra
 E0
 TopRing
-".,"
+.,
 1r
 Undef
 LPlanes
@@ -724,7 +776,7 @@ h'
 TopOn
 g'
 smul
-"Y"""
+Y"
 ExtStrCat
 .x.
 splice
@@ -744,7 +796,8 @@ si
 CharPlyMat
 OP
 gcd
-TopSep TopLnd
+TopSep
+TopLnd
 HVMap
 CPreHil
 f1
@@ -761,9 +814,11 @@ Y0
 mGMdl
 abs
 TotBnd
-linC LinCo
+linC
+LinCo
 |^|_
-inA leA
+inA
+leA
 oMnd
 LHyp
 fi
@@ -772,7 +827,11 @@ CnP
 +P
 +cc
 Cp
-Pell1QR Pell14QR Pell1234QR PellFund []NN
+Pell1QR
+Pell14QR
+Pell1234QR
+PellFund
+[]NN
 .1.
 CSGrpALT
 ordTop
@@ -798,7 +857,10 @@ sigaGen
 (
 Scalar
 toOMeas
-/FldExt /FinExt /AlgExt [:]
+/FldExt
+/FinExt
+/AlgExt
+[:]
 _S
 toInc
 G'
@@ -820,11 +882,11 @@ H0
 toMetSp
 MembErs
 la
-"R"""
+R"
 ElDisjs
 L^1
 m1
-"I"""
+I"
 .+
 +
 TermO
@@ -845,14 +907,14 @@ sum^
 tanh
 .r
 norm
-"t"""
+t"
 seq
 measures
 Ban
 CMet
-"et"""
+et"
 LVec
-"i"""
+i"
 et
 ZZbar
 x.
@@ -883,7 +945,7 @@ FilMap
 2o
 ndx
 /e
-"J"""
+J"
 n1
 /s
 RRfld
@@ -894,11 +956,12 @@ EdgWalks
 M
 psi
 D1_
-"H"""
+H"
 R
 oRVC
 L'
-"<"" "">"
+<"
+">
 ~=r
 area
 topGen
@@ -911,7 +974,7 @@ FriendGraph
 N.
 jet
 Univ
-"[,]"
+[,]
 Fun
 `'
 sec
@@ -919,14 +982,14 @@ _C
 digit
 Reflexive
 SubGrp
-"r"""
+r"
 =
 arcsin
 th0
 domA
 K'
 GrpOpHom
-"u"""
+u"
 assIntOp
 <N
 meet
@@ -960,7 +1023,8 @@ e1
 R.
 C^n
 ..^
-LIndF LIndS
+LIndF
+LIndS
 GrIsom
 AC_
 jmu
@@ -1002,13 +1066,13 @@ MaxIdeal
 -/\
 inv
 DivRing
-"h"""
+h"
 -1R
 Mnd
 Refs
 DiagFunc
 s
-"f"""
+f"
 O0
 Isom
 FuncCat
@@ -1025,7 +1089,7 @@ finSupp
 USGraph
 *rf
 Ramsey
-"g"""
+g"
 TEndo
 Meas
 CChat
@@ -1046,7 +1110,8 @@ jta
 Z0
 exp
 chr
-<<s |s
+<<s
+|s
 voln
 A!
 .sf
@@ -1060,7 +1125,8 @@ RR*Hom
 HomLimB
 e'
 CVecOLD
-Vtx iEdg
+Vtx
+iEdg
 NeighbVtx
 LSubSp
 fLimf
@@ -1076,7 +1142,8 @@ c'
 LVols
 rem1p
 U_
-IDLsrg Spec
+IDLsrg
+Spec
 Inv
 tan
 UnifSet
@@ -1086,14 +1153,14 @@ L1_
 K0
 Prob
 |g
-"n"""
+n"
 A
 ta'
 Xt_
 AlgSpan
 |`t
 Ref
-"S"""
+S"
 ~<_*
 t*rec
 LNoeR
@@ -1144,18 +1211,20 @@ v
 k
 *Met
 w1
-Line LinesEE Ray
+Line
+LinesEE
+Ray
 Lambda
 HLHil
 Slot
 Monic1p
 !
 joinH
-"""s"
+"s
 /_f
 <o
 mCls
-",~"
+,~
 g
 DIsoB
 ~Met
@@ -1165,10 +1234,14 @@ mFresh
 cosh
 -u
 FinUSGraph
-TarskiGC TarskiGB TarskiGCB TarskiGE TarskiGDim>=
+TarskiGC
+TarskiGB
+TarskiGCB
+TarskiGE
+TarskiGDim>=
 comp
 sigma
-"ta"""
+ta"
 unifTop
 mFS
 P0
@@ -1178,10 +1251,12 @@ HmOp
 ~R
 Struct
 -R
-Monic Poly<
+Monic
+Poly<
 CRing
 vol
-wsuc WLim
+wsuc
+WLim
 USPGraph
 Coll
 4
@@ -1190,7 +1265,7 @@ S1_
 Arrow
 fClus
 <Q
-"rh"""
+rh"
 e0
 mUFS
 DomainQs
@@ -1243,9 +1318,9 @@ ze'
 p1
 q
 si0
-"b"""
+b"
 span
-"L"""
+L"
 ~H
 Mgm
 limCC
@@ -1257,8 +1332,10 @@ u.
 .i
 SymGrp
 RingOps
-"o""_"
-EE Btwn Cgr
+o"_
+EE
+Btwn
+Cgr
 -Top->
 PCl
 IterComp
@@ -1280,11 +1357,22 @@ matToPolyMat
 <_O(1)
 t'
 normOpOLD
-[s ]s
+[s
+]s
 ComplUSGraph
-"q"""
+q"
 ~FG
-(x) Bigcup SSet Trans Limits Fix Funs Singleton Singletons Image Cart
+(x)
+Bigcup
+SSet
+Trans
+Limits
+Fix
+Funs
+Singleton
+Singletons
+Image
+Cart
 HDMap
 oR
 .s
@@ -1301,7 +1389,7 @@ RngCatALTV
 RngHom
 Lim
 Fne
-""""
+"
 LMHom
 Z[i]
 SPathsOn
@@ -1328,7 +1416,7 @@ B1_
 cprob
 ||
 RSpan
-"v""_"
+v"_
 /\g
 d
 >.
@@ -1370,10 +1458,14 @@ zeta
 TopMod
 LSSum
 bra
-InnerFiveSeg Cgr3 Colinear FiveSeg
+InnerFiveSeg
+Cgr3
+Colinear
+FiveSeg
 }
 CHilOLD
-LineM Sphere
+LineM
+Sphere
 <
 .Q
 dProj
@@ -1402,7 +1494,7 @@ lastS
 .^
 gcdOLD
 O(1)
-"d"""
+d"
 wUniCl
 AFS
 NoeACS
@@ -1412,7 +1504,7 @@ DVecA
 oF
 proj
 har
-",."
+,.
 cf
 FunsALTV
 RPrime
@@ -1428,7 +1520,7 @@ LSAtoms
 1R
 ZMod
 Plig
-"G"""
+G"
 SymRels
 sum*
 AxReg
@@ -1443,13 +1535,16 @@ mWGFS
 +pQ
 mPreSt
 ph1
-"T"""
+T"
 a
 d1
 ZRing
-RR^ EEhil
+RR^
+EEhil
 WSPathsN
-"(| ,, |)"
+(|
+,,
+|)
 wrecs
 jph
 _tau
@@ -1462,7 +1557,7 @@ cPolyMatToMat
 A1_
 mulGrp
 mStat
-"ze"""
+ze"
 cos
 Dil
 HomA
@@ -1479,7 +1574,8 @@ Mono
 q0
 DomainQss
 C_H
-linIndS linDepS
+linIndS
+linDepS
 EndoFMnd
 C0
 USHGraph
@@ -1498,7 +1594,7 @@ Prv
 .o.
 f
 sgns
-"[,)"
+[,)
 mThm
 Ismt
 TopSp
@@ -1507,7 +1603,7 @@ CovHasRef
 P
 R1_
 d0
-"l"""
+l"
 TarskiG2D
 j'
 phi
@@ -1525,9 +1621,9 @@ Ass
 Fre
 /g
 y
-"M"""
+M"
 x1
-"m"""
+m"
 repr
 Func
 adj
@@ -1538,7 +1634,7 @@ OutMeas
 pi1
 NzRing
 ZZ>=
-"(,)"
+(,)
 2nd
 mItp
 SymRel
@@ -1549,11 +1645,12 @@ Rel
 ocv
 j0
 seqom
-lcm _lcm
+lcm
+_lcm
 uncurry
 H1_
 E.g
-"e"""
+e"
 RingHom
 maDet
 RiseFac
@@ -1576,15 +1673,16 @@ HrmOp
 pairF
 cgrA
 iota'
-"A"""
+A"
 freeLMod
 mu
 RegUSGraph
 Redunds
 eval1
-"ch"""
-","
-LPIdeal LPIR
+ch"
+,
+LPIdeal
+LPIR
 i^i
 RR*s
 +N
