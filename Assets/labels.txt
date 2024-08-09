@@ -45329,5 +45329,4 @@ amgmlemALT
 amgmw2d
 young2d
 $e
-$p
 $a

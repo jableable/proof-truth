@@ -37,7 +37,7 @@ def preprocess_edge_index(subst_dict: dict, edge_index: np.ndarray):
     return edge_index_preprocessed
 
 
-def get_node_features(proof: dict, node: dict):
+def get_node_features(proof: dict, node: dict, hpt: dict):
 
     pattern_e = r'^\$e' #to match 1st two characters of $e statement
     #pattern_2=r'^..' 
@@ -54,6 +54,8 @@ def get_node_features(proof: dict, node: dict):
         else:
             if node:
                 label=get_label(node, k)  #get label if the text label exists; set label to None otherwise
+                if label in hpt:
+                    label = "$e"
             if not label:  
                 match = re.match(pattern_2, v)
                 label=match.group(0)    
@@ -88,16 +90,16 @@ def get_edge_index_renumbered(node_index: list, edge_index: np.ndarray):  #renum
 
 if __name__ == "__main__":
 
-    df = pd.read_csv('./Assets/tag_proof.csv', index_col='tag')
+    df = pd.read_csv('../Assets/tag_proof.csv', index_col='tag')
     tag_dict = df.to_dict(orient='index')
-
     graph_dict={}
 
     for n, key in enumerate(tag_dict.keys()):
         
         proof=ast.literal_eval(tag_dict[key]['proof'])
         node=ast.literal_eval(tag_dict[key]['node'])
-        x=get_node_features(proof, node)
+        hpt = ast.literal_eval(tag_dict[key]['hpt'])
+        x=get_node_features(proof, node, hpt)
         edge_index=get_edge_index(node)
         subst_dict=get_substitution_dict(proof)
         edge_index=preprocess_edge_index(subst_dict, edge_index)
