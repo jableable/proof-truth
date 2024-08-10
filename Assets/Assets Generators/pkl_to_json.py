@@ -16,7 +16,7 @@ class NumpyEncoder(json.JSONEncoder):
 # write the .json file; 
 # this .json file is used in creation of Dataset class
 # Dataset class makes its own .json file to replace statements with vector embeddings
-with open('../unprocessed_data.json', 'w') as f:
+with open('../../Model/data/raw/data.json', 'w') as f:
     json.dump(raw_data, f, cls=NumpyEncoder)
 
 # open the .json file; could also use pd.read_json
