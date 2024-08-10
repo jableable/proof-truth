@@ -43,7 +43,7 @@ def get_thm_stmt_emb(stmt):
 
 
 # inverse of get_thm_stmt_emb; returns statement
-def embedding_to_statement(embedding):
+def emb_to_stmt(embedding):
     new_stmt = ""
     voc_index = create_voc_index()
     inv_voc_index = {v: k for k, v in voc_index.items()}
@@ -67,5 +67,5 @@ if __name__ == "__main__":
     lbl = 'rspcev'  
     stmt = '( ( G e. R /\\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
     print(create_emb(lbl,stmt))
-    print(embedding_to_statement(create_emb(lbl,stmt)))
+    print(emb_to_stmt(create_emb(lbl,stmt)))
     
