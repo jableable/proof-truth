@@ -20,21 +20,38 @@ def get_thm_label_num(lbl):
     return
 
 
+# make vocabulary index for get_thm_stmt_emb
+def create_voc_index():
+    with open("../Assets/vocab.txt", "r") as input:
+        voc_index = {}
+        for num, line in enumerate(input):  # correspond vocabulary with numbers in range 1-1598 within voc_index dict
+            line = line.split() # get rid of \n
+            voc_index[line[0]] = num+1  # shift by 1 so that 0 corresponds to space
+        return voc_index
+
+
 # create portion of embedding from theorem statement; returns embedding vector
 def get_thm_stmt_emb(stmt):
     vector_size = 11547   # 11547 obtained as length of longest logical statement from find_longest_statement.py
     emb = np.zeros(vector_size, dtype=int)   # initialize embedding vector
 
     split_stmt = stmt.split()   # remove spaces from stmt and place each character into ordered list
-
-    with open("../Assets/vocab.txt", "r") as input:
-        voc_index = {}
-        for num, line in enumerate(input):  # correspond vocabulary with numbers in range 1-1598 within voc_index dict
-            line = line.split() # get rid of \n
-            voc_index[line[0]] = num+1  # shift by 1 so that 0 corresponds to space
-        for num, char in enumerate(split_stmt): # place index for char from voc_index into embedding
-            emb[num] = voc_index[char]
+    voc_index = create_voc_index()  
+    for num, char in enumerate(split_stmt): # place index for char from voc_index into embedding
+        emb[num] = voc_index[char]
     return emb
+
+
+# inverse of get_thm_stmt_emb; returns statement
+def embedding_to_statement(embedding):
+    new_stmt = ""
+    voc_index = create_voc_index()
+    inv_voc_index = {v: k for k, v in voc_index.items()}
+    for num in embedding[1:]:   # skip over number from label
+        if num != 0:
+            new_stmt += inv_voc_index[num]+" "
+    new_stmt = new_stmt[:len(new_stmt)-1]        # remove space at end
+    return new_stmt
 
 
 # combine embeddings from get_thm_label_num and get_thm_stmt_emb
@@ -46,8 +63,9 @@ def create_emb(lbl,stmt):
 
 if __name__ == "__main__":  
     
-    #temporary example input of stmt and lbl
+    #example input of stmt and lbl
     lbl = 'rspcev'  
     stmt = '( ( G e. R /\\ x e. ( ._|_ ` ( L ` G ) ) ) -> E. f e. R x e. ( ._|_ ` ( L ` f ) ) )'
     print(create_emb(lbl,stmt))
+    print(embedding_to_statement(create_emb(lbl,stmt)))
     
