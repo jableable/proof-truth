@@ -9,15 +9,27 @@
 import numpy as np
 
 
+# make label index for get_thm_label_num
+def create_lab_index():
+    with open("../Assets/labels.txt", "r") as input:
+        lab_index = {}
+        for num, line in enumerate(input):  # correspond labels with numbers in range 1-45332 within label_index dict
+            line = line.split() # get rid of \n
+            lab_index[line[0]] = num+1  # shift by 1 to match .txt file
+        return lab_index
+    
+
 # create portion of embedding from theorem label; returns num of label from labels.txt
 def get_thm_label_num(lbl):
-    with open("../Assets/labels.txt", "r") as lbl_nums:
-        for num, line in enumerate(lbl_nums):
-            line = line.split() # get rid of \n
-            if lbl in line:
-                return num+1    #shift by 1 to match lines nums from labels.txt
-    print(f"didn't find {lbl}")
-    return
+    lab_index = create_lab_index()
+    return lab_index[lbl]  
+
+# inverse of get_thm_label_num; returns label
+def num_to_label(num):
+    lab_index = create_lab_index()
+    inv_lab_index = {v: k for k, v in lab_index.items()}
+    return inv_lab_index[num]
+
 
 
 # make vocabulary index for get_thm_stmt_emb
@@ -69,3 +81,4 @@ if __name__ == "__main__":
     print(create_emb(lbl,stmt))
     print(emb_to_stmt(create_emb(lbl,stmt)))
     
+    print(create_lab_index()["idi"])
