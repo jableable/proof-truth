@@ -21,6 +21,7 @@ class Metamath:
         self.process_dict[id].kill(signal.CTRL_C_EVENT)
         del self.process_dict[id]
 # how to use
+'''
 metamath = Metamath('metamath/metamath.exe')    #path from this file to metamath.exe
 print(metamath.initialize(0))
 output1 = metamath.send(0,'read "metamath/demo0.mm"')   
@@ -30,4 +31,5 @@ def output_process(output):         # an example of creating your next input fro
 output2 = metamath.send(0,output_process(output1))
 print(output2)
 metamath.close(0)
+'''
 
