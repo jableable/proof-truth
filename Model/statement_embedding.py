@@ -11,7 +11,7 @@ import numpy as np
 
 # make label index for get_thm_label_num
 def create_lab_index():
-    with open("../Assets/labels.txt", "r") as input:
+    with open("../Assets/true_labels.txt", "r") as input:
         lab_index = {}
         for num, line in enumerate(input):  # correspond labels with numbers in range 1-45332 within label_index dict
             line = line.split() # get rid of \n

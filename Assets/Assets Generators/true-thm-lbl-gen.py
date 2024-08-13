@@ -34,9 +34,10 @@ with open('./numbered_set.txt', 'r') as input:
     print("There are", len(thms), "theorems in numbered_set.txt")
 
 #extract labels of theorems
-with open('./numbered_set.txt', 'r') as input, open('../labels.txt', 'w') as output:     
+with open('./numbered_set.txt', 'r') as input, open('../true_labels.txt', 'w') as output:     
     for line in input:
         label = re.search("\S+(?=\s\$a|\s\$p)",line)
         if label is not None:
             output.write(label.group()+"\n")
-    output.write("$e") # extra assumption label
+    output.write("$e"+"\n") # extra assumption label
+    output.write("$a") # extra axiom label

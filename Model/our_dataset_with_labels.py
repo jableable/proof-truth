@@ -13,8 +13,10 @@ from torch_geometric.data import Data, Dataset
 # for more info
 
 class ProofDatasetWithLabels(Dataset):
-    def __init__(self, root, transform=None, pre_transform=None, pre_filter=None, file_limit=None):
-        self.file_limit = file_limit    # make file limit able to be called later
+    def __init__(self, root, transform=None, pre_transform=None, pre_filter=None, file_limit=None, vocab_size = 1598, label_size = 45332):
+        self.file_limit = file_limit    # make file_limit, vocab_size, label_size able to be called later
+        self.vocab_size = vocab_size    
+        self.label_size = label_size    
         super().__init__(root, transform, pre_transform, pre_filter)
 
     # indicate data file in data/raw to be processed
@@ -58,7 +60,11 @@ class ProofDatasetWithLabels(Dataset):
                 y_emb = torch.Tensor([emb[0]])
 
                 x = torch.cat((x,x_emb),dim=0)
+                
                 y = torch.cat((y,y_emb),dim=0)
+
+            x = torch.div(x,self.vocab_size)
+            y = torch.div(y,self.label_size)
 
             edge_index = torch.Tensor(self.data[index]["edge_index"])
 
