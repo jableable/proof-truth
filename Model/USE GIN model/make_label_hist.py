@@ -1,8 +1,8 @@
-# iterate over raw data.json file based on file limit (first 5000 files)
+# iterate over raw data.json file based on file limit (first 10000 files)
 # extract pf label at each step and convert to num
 # make dict count of frequencies
 
-# if a frequency is 10 or less, change label to be unk
+# if a frequency is n or less, change label to be unk (n=5 is default)
 # when labels are reorganized, highest label is "unknown" bin
 
 import pandas as pd
@@ -13,7 +13,7 @@ from statement_embedding import get_thm_label_num
 def make_label_hist(file_limit):
  
     # read json file and restrict num of graphs considered
-    pf_data = pd.read_json("../data/raw/data.json")
+    pf_data = pd.read_json("./data/raw/data.json")
     pf_data = pf_data.iloc[:, : file_limit]
 
     # initialize histogram            
@@ -50,9 +50,6 @@ def make_label_hist(file_limit):
 
 # replace
 def remove_infrequent_labels(dict, df, n):
-            
-    # initialize list of infrequently used labels
-    #infrequent_labels = []
 
     # initialize dict of infrequently used labels
     infrequent_labels = {}
@@ -77,7 +74,7 @@ def remove_infrequent_labels(dict, df, n):
 
     print("writing to .json...")    
     # write the .json file
-    df.to_json('../data/raw/'+str(len(df.columns))+'_relabeled_data_at_least_5.json')
+    df.to_json('./data/raw/'+str(len(df.columns))+'_relabeled_data_at_least_5.json')
 
 
 if __name__ == "__main__":
@@ -85,6 +82,3 @@ if __name__ == "__main__":
     file_limit=10000
     pf_data, pf_dict = make_label_hist(file_limit)
     remove_infrequent_labels(dict=pf_dict, df=pf_data, n=5)
-
-
-    #224: 5, 225: 24, 226: 54, 227: 115, 228: 29, 229: 25, 230: 2

@@ -1,26 +1,24 @@
-import os.path as osp
 import torch
 import pandas as pd
-from statement_embedding import create_emb, get_thm_label_num, create_lab_index
-from torch_geometric.data import Data, Dataset, InMemoryDataset
+from statement_embedding import get_thm_label_num
+from torch_geometric.data import Data, InMemoryDataset
 import numpy as np
 import json 
 
 
 # Create ProofDataset class
-# When calling ProofDataset(root="data/"), a single .pt file is
+# When calling ProofDataset(root="data/"), a single .pt file is created
 # # See https://pytorch-geometric.readthedocs.io/en/latest/tutorial/create_dataset.html
 # for more info
 
 
 class ProofDataset(InMemoryDataset):
     def __init__(self, root, read_name, write_name, transform=None, pre_transform=None, pre_filter=None, file_limit=None):
-        self.file_limit = file_limit    # make file_limit, vocab_size, label_size able to be called later
+        self.file_limit = file_limit    # make file_limit able to be called later
         self.read_name = read_name
         self.write_name = write_name
         super().__init__(root, transform, pre_transform, pre_filter)
         self.data, self.slices = torch.load(self.processed_paths[0])
-
 
 
     @property
@@ -34,10 +32,7 @@ class ProofDataset(InMemoryDataset):
 
 
     def download(self):
-        # Download to `self.raw_dir`.
-        #path = download_url(url, self.raw_dir)
         pass
-
 
     # used to relabel y values so that all labels occur at least once
     # more explicitly, remove labels that don't occur, and reindex remaining labels
@@ -110,9 +105,6 @@ class ProofDataset(InMemoryDataset):
                 assumption_vertices = [num_nodes-1 for _ in range(num_nodes-1)]
                 cur_edge_index = torch.Tensor([destination_vertex,assumption_vertices])
 
-
-
-
                 # compile edge_indices, make data objects, and append them to data_list to be saved later
                 edge_index1 = torch.Tensor(self.data[index]["edge_index"])
                 edge_index2 = torch.cat((edge_index2,cur_edge_index), dim=0)
@@ -140,8 +132,6 @@ class ProofDataset(InMemoryDataset):
         # overwrite old labels
         for data in data_list:
             data.y = torch.tensor([class_corr[x.item()] for x in data.y.to(int)])
-
-
         
         if self.pre_filter is not None:
             data_list = [data for data in data_list if self.pre_filter(data)]
@@ -152,18 +142,10 @@ class ProofDataset(InMemoryDataset):
 
         torch.save(self.collate(data_list), self.processed_paths[0])
 
-            #if self.pre_filter is not None and not self.pre_filter(data):
-                #continue
-
-            #if self.pre_transform is not None:
-                #data = self.pre_transform(data)
 
 
-
-
-
-
-
+# the following class is used to relabel an instantiation of ProofDataset
+# this relabeling is performed in use_gin_model_w_hidden_conc.ipynb
 
 class HiddenConcProofDataset(InMemoryDataset):
     def __init__(self, root, read_name, write_name, data_list=None, transform=None, pre_transform=None, pre_filter=None, file_limit=None):
@@ -172,8 +154,7 @@ class HiddenConcProofDataset(InMemoryDataset):
         self.write_name = write_name
         super().__init__(root, transform, pre_transform, pre_filter)
         self.data, self.slices = torch.load(self.processed_paths[0])
-
-
+        
 
     @property
     def raw_file_names(self):
@@ -193,21 +174,15 @@ class HiddenConcProofDataset(InMemoryDataset):
     def process(self):
         self.data = self.data_list
 
-        
         if self.pre_filter is not None:
             data_list = [data for data in data_list if self.pre_filter(data)]
 
         if self.pre_transform is not None:
             data_list = [self.pre_transform(data) for data in data_list]
 
-
         torch.save(self.collate(self.data_list), self.processed_paths[0])
 
-            #if self.pre_filter is not None and not self.pre_filter(data):
-                #continue
 
-            #if self.pre_transform is not None:
-                #data = self.pre_transform(data)
 
 if __name__ == "__main__":
     
