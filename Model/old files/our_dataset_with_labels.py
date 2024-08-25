@@ -53,18 +53,26 @@ class ProofDatasetWithLabels(Dataset):
             y = torch.Tensor([])    # initialize label tensor for entire graph
 
             for i, _ in enumerate(self.data[index]["x"]):   # loop through each proof step
+                if i % 1000 == 0:
+                    print(f"processing graph {i}")
                 lbl = self.data[index]["x"][i][1]["label"]
                 stmt = self.data[index]["x"][i][1]["statement"]
                 emb = create_emb(lbl,stmt)
-                x_emb = torch.Tensor([emb[1:]])
+                x_emb = torch.Tensor([emb[1:512]])
                 y_emb = torch.Tensor([emb[0]])
+                ax_indices = [5,6,7,8,1797,1811,1911,1970,2015,2114,2122,2143,2159,2176,2382,2773,5157,5170,5177,5234,5298,7445]
+                if y_emb>0:
+                    if y_emb in ax_indices:
+                        y_emb = (y_emb>0)
+                    else: 
+                        y_emb = (y_emb>0)*2
 
-                x = torch.cat((x,x_emb),dim=0)
-                
+
+                x = torch.cat((x,x_emb),dim=0)                
                 y = torch.cat((y,y_emb),dim=0)
 
             x = torch.div(x,self.vocab_size)
-            y = torch.div(y,self.label_size)
+            #y = torch.div(y,self.label_size)
 
             edge_index = torch.Tensor(self.data[index]["edge_index"])
 
