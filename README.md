@@ -6,7 +6,7 @@ todo
 
 # Generating the .pt Graph Dataset
 
-There are several files that must be generated (in order) so that the ultimate graph .pt file can be produced and fed into the model. This is due, in part, to the following user-defined parameters. The file_size parameter determines how many proofs are considered from the initial dataset of ~42000 proofs. By default, this parameter is 10000. The other parameter is the minimum number of occurences for which a label needs to occur to be represented in the dataset. Label occurrences which fall below this threshold are relabeled to "unk" (for unknown). By default, this parameter is 5.
+There are several files that must be generated (in order) so that the ultimate graph .pt file can be produced and fed into the GIN model. This is due, in part, to the following user-defined parameters. The file_size parameter determines how many proofs are considered from the initial dataset of ~42000 proofs. By default, this parameter is 10000. The other parameter is the minimum number of occurences for which a label needs to occur to be represented in the dataset. Label occurrences which fall below this threshold are relabeled to "unk" (for unknown). By default, this parameter is 5.
 
 1. Beginning with the initial dataset [data.json](https://github.com/jableable/proof-truth/blob/main/Model/USE%20GIN%20model/data/raw/data.json), relabel and reindex labels by running [make_label_hist.py](https://github.com/jableable/proof-truth/blob/main/Model/USE%20GIN%20model/make_label_hist.py). This produces "10000_relabeled_data_at_least_5.json".
 
