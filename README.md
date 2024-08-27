@@ -2,7 +2,7 @@
 This project was completed for the Erdős Institute - Summer 2024 - Deep Learning Bootcamp.
 
 # Extracting proof graphs from Metamath
-todo (Evgeniya)
+todo 
 
 # Generating the .pt Graph Dataset
 
