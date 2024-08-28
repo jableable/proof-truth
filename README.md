@@ -2,7 +2,26 @@
 This project was completed for the Erdős Institute - Summer 2024 - Deep Learning Bootcamp.
 
 # Extracting proof graphs from Metamath
-todo 
+To obtain data to train our models, we used [Metamath](https://us.metamath.org) . Metamath is a simple computer language for archiving, verifying, and studying mathematical proofs. The Metamath main library contains **42494 proofs** based on ZFC set theory. The proofs are saved in **set.mm** file (which can be downloaded as a part of a zip file from [metamath web site](https://us.metamath.org/#downloads)) and can be accessed and manipulated via metamath command-line program. We wrote an API (the code is in [metamath.py](metamath.py) file) to access and extract the proofs in the format we wanted. 
+
+There are several options for displaying proofs in metamath program. We found that the most suitable settings for us are
+- the “normal” format (as opposed to “compressed” ), see pg. 56 of the [Metamath book](https://us.metamath.org/#book)
+- the “essential” format (as opposed to “all” ), see pg. 49 of the [Metamath book](https://us.metamath.org/#book)
+- the “lemmon” style display (as opposed to “tree-style”), see pg. 47 of the [Metamath book](https://us.metamath.org/#book) 
+
+Here is an example how the proof for double modus ponnence inference looks like in the metamath program (the key-word/label for the proof is “mp2”):
+
+!["mp2": double modus ponnence inference proof](/presentation_assets/mp2_lemmon.png)
+
+The proofs in set.mm are by default saved in compressed format. We used our API to convert them to normal format using xxx.py. 
+
+We used our API to extract the proofs into a dictionary using first [get_proof.py](/Dataset/get_proof.py) and then [data_fixing.py](/Dataset/data_fixing.py) . Here is an entry for mp2:
+
+!["mp2": double modus ponnence inference proof](/presentation_assets/mp2_dict.png)
+
+Next we processed that into a dataset of graphs using [thmgraph.py](/Dataset/thmgraph.py) , where each graph is a theorem, where nodes are proof steps and edges connect the edges when there is a dependency in the theorem steps. Here is a depiction of mp2 proof tree.
+
+![another picture]()
 
 # Generating the .pt Graph Dataset
 
