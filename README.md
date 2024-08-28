@@ -21,7 +21,7 @@ We used our API to extract the proofs into a dictionary using first [get_proof.p
 
 Next we processed that into a dataset of graphs using [thmgraph.py](/Dataset/thmgraph.py) , where each graph is a theorem, where nodes are proof steps and edges connect the edges when there is a dependency in the theorem steps. Here is a depiction of mp2 proof tree.
 
-!["mp2": double modus ponnence inference proof](/presentation_assets/ax-mp_proof_tree.pdf)
+!["mp2": double modus ponnence inference proof](/presentation_assets/ax-mp_proof_tree.png)
 
 # Generating the .pt Graph Dataset
 
