@@ -55,11 +55,21 @@ While a validation accuracy of 55% is not terrible in our context, we have a mor
 
 When restricting to conclusion nodes, which is our true application, the validation accuracy is XX% and the "Top 5 Accuracy" is XX%. This result is quite remarkable given the wide variety of proofs in our dataset and the large number (3,557) of different logical steps that could be chosen.
 
+# Generating Statements
+
+### Setup
+
+The model for generating statements used a combination of graph random walks and language processing models. The architecture was a long short-term memory (LSTM) recurrent neural network with a single hidden layer. The overall goal of this model was to predict the statement of the penultimate step based on the previous steps. We used random walks up the proof tree to generate blocks of text. These blocks of text were converted to skip-grams. The neural network was trained on these skip-grams to predict the next character. To predict a whole statement, the model used multiple possible skipgrams ending at the beginning of the desired statement, and predicted the character most likely to appear immediately after. By iterating this process, statements were predicted. (The end of a statement was a special character, telling the model to stop.) 
+
+### Result
+
+The results we discuss here are for a subset of the proofs, propositional logic without quantifiers. The reason for this is each section of the MetaMath database uses a different collection of symbolic variables. With the infrastructure as built requires the model to be trained on each new symbol it sees. Overall, the performance of this model by itself was mediocre to poor. The model struggled to predict the statements with full accuracy, because it frequently permuted the symbolic variables in the logical statements. In most cases, when the statement did not approach the length of the skip-grams, the structure of the statement was recognizably similar to the correct statement. In almost all cases, the model outputed a valid statement. This matches known experience with natural language processing, where chat bots are able to produce grammatically correct text, but frequently contradict themselves. The inability of the model to recognize that symbolic variables can be used equivalently but are not interchangeable, was the largest drawback of the model, both hindering accuracy and scope.
+
 # Future Work
 
 While training our GIN on graphs to make predictions is both powerful and useful, it would be more user-friendly if it were integrated in an existing proof assistant like Metamath or LEAN.
 
-We also considered several different predictive models within this project. It would be interesting to integrate them together in an ensemble format to see if our results are improved.
+We also considered several different predictive models within this project. It would be interesting to integrate them together in an ensemble format to see if our results are improved. In particular, it would be useful to see if the GIN node prediction model could correctly discern labels from the statement prediction model. Moreover, we could improve the statement prediction model by better incorporating the tree structure. (In particular by training on bundels of branches of the tree instead of on single branches at a time.)
 
 
 
