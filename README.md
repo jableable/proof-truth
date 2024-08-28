@@ -13,7 +13,7 @@ Here is an example how the proof for double modus ponnence inference looks like 
 
 !["mp2": double modus ponnence inference proof](/presentation_assets/mp2_lemmon.png)
 
-The proofs in set.mm are by default saved in compressed format. We used our API to convert them to normal format using xxx.py. 
+The proofs in set.mm are by default saved in compressed format. We used our API to convert them to normal format using [setmm_to_normal.ipynb](/Dataset/setmm_to_normal.ipynb). 
 
 We used our API to extract the proofs into a dictionary using first [get_proof.py](/Dataset/get_proof.py) and then [data_fixing.py](/Dataset/data_fixing.py) . Here is an entry for mp2:
 
@@ -21,7 +21,7 @@ We used our API to extract the proofs into a dictionary using first [get_proof.p
 
 Next we processed that into a dataset of graphs using [thmgraph.py](/Dataset/thmgraph.py) , where each graph is a theorem, where nodes are proof steps and edges connect the edges when there is a dependency in the theorem steps. Here is a depiction of mp2 proof tree.
 
-![another picture]()
+!["mp2": double modus ponnence inference proof](/presentation_assets/ax-mp_proof_tree.jpg)
 
 # Generating the .pt Graph Dataset
 
