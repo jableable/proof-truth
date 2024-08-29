@@ -71,7 +71,7 @@ While training our GIN on graphs to make predictions is both powerful and useful
 
 We also considered several different predictive models within this project. It would be interesting to integrate them together in an ensemble format to see if our results are improved. In particular, it would be useful to see if the GIN node prediction model could correctly discern labels from the statement prediction model. Moreover, we could improve the statement prediction model by better incorporating the tree structure. (In particular by training on bundles of branches of the tree instead of on single branches at a time.)
 
-We could also increase the frequency of rare labels by generating more examples of the applications of logical statements which show up in our profos. A simple way to do this would be to generate a copy of a statement but with different variables. 
+We could also increase the frequency of rare labels by generating more examples of the applications of logical statements which show up in our proofs. A simple way to do this would be to generate a copy of a statement but with different variables. 
 
 
 
